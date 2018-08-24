@@ -1,0 +1,11 @@
+<base_material version="2.0" name="compute_shoreline_field" hidden="1" parameters_prefix="m">
+	
+	<shader pass="post"
+		compute="core/shaders/water/compute/shoreline_grabber.comp"/>
+	
+	<texture unit="0" name="mask" shader="all" type="procedural"/>
+	
+	<parameter name="radius" type="slider" min="0.0" max="1.0">0.0</parameter>
+	<parameter name="chunk_offset" type="constant">0.0 0.0 0.0 0.0</parameter>
+	
+</base_material>

@@ -1,0 +1,11 @@
+<base_material version="2.0" name="render_environment_cube" hidden="1">
+	
+	<!-- shaders -->
+	<shader pass="post"
+		vertex="core/shaders/screen_space/vertex/default.vert"
+		fragment="core/shaders/screen_space/fragment/environment_cube.frag"/>
+	
+	<texture type="reflection_cube"/>
+	
+	<parameter name="color_background" type="constant" >1.0 1.0 1.0 1.0</parameter>
+</base_material>

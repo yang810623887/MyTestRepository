@@ -1,0 +1,10 @@
+<base_material version="2.0" name="render_exposure_scale" hidden="1">
+	
+	<!-- shaders -->
+	<shader pass="post"
+		vertex="core/shaders/screen_space/exposure/vertex/scale.vert"
+		fragment="core/shaders/screen_space/exposure/fragment/scale.frag"/>
+	
+	<!-- textures -->
+	<texture name="color" type="procedural"/>
+</base_material>

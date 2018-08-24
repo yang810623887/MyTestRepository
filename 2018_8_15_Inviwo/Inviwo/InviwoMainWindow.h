@@ -11,11 +11,13 @@
 
 namespace inviwo{
 
-	//class ConsoleWidget;
+	class NetworkEditorView;
+	class NetworkEditor;
 	class settingswidget;
 	class ProcessorTreeWidget;
 	class PropertyListWidget;
 	class HelpWidget;
+	class ConsoleWidget;
 
 
 	class InviwoMainWindow : public QMainWindow
@@ -33,12 +35,16 @@ namespace inviwo{
 
 	private:
 		InviwoApplicationQt * app_;
+		std::shared_ptr<NetworkEditor> networkEditor_;
+		NetworkEditorView* networkEditorView_;
+
+
 		//dock widgets
 		settingswidget* settingsWidget_;
 		ProcessorTreeWidget* processorTreeWidget_;
 		PropertyListWidget* propertyListWidget_;
 		HelpWidget* helpWidget_;
-		//std::shared_ptr<ConsoleWidget> consoleWidget_;
+		std::shared_ptr<ConsoleWidget> consoleWidget_;
 
 
 		//menu actions

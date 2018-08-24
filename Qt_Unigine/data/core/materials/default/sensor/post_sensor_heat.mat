@@ -1,0 +1,16 @@
+<material version="2.6" name="post_sensor_heat" base_material="post_sensor" editable="0" manual="1">
+	
+	<!-- textures -->
+	<texture name="heatlookup" filter="linear" wrap="clamp">core/textures/sensor/lut_heat.dds</texture>
+	
+	<!-- parameters -->
+	<parameter name="ambient_heat_occlusion">-0.075</parameter>
+	<parameter name="influence_scene_scale">0.5</parameter>
+	<parameter name="sensor_blur_scale">1</parameter>
+	<parameter name="sensor_blur_detail">0.7</parameter>
+	<parameter name="noise_level">0.005</parameter>
+	<parameter name="global_aux_pow">5</parameter>
+	<parameter name="global_aux_scale">2</parameter>
+	<parameter name="sensor_temperature_map_shift">-0.01</parameter>
+	
+</material>

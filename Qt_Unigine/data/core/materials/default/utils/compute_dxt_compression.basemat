@@ -1,0 +1,16 @@
+<base_material version="2.0" name="compute_dxt_compression" hidden="1" parameters_prefix="m">
+	
+	<state name="compression_type" items="compress_dxt1,compress_dxt3,compress_dxt5,compress_ati1,compress_ati2"  defines="items">0</state>
+	<state name="compress_quality" items="compress_quality_low,compress_quality_high" defines="items">1</state>
+	<state name="source_texture_type" items="source_texture_2d,source_texture_2d_array" defines="items">0</state>
+	
+	<!-- shaders -->
+	<shader pass="post"
+		compute="core/shaders/compute/dxt_compression.comp"/>
+	
+	<parameter name="layer" type="slider">0.0</parameter>
+	<parameter name="mip_offset" type="constant">0.0 0.0 0.0 0.0</parameter>
+	<parameter name="block_group" type="constant">0.0 0.0 0.0 0.0</parameter>
+	<parameter name="chunk_offset" type="constant">0.0 0.0 0.0 0.0</parameter>
+	
+</base_material>

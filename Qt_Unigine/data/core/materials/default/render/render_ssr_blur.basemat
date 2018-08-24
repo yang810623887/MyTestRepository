@@ -1,0 +1,22 @@
+<base_material version="2.0" name="render_ssr_blur" hidden="1">
+	
+	<state name="horizontal" defines="VERTICAL,HORIZONTAL">0</state>
+	<state name="resolution" defines="QUARTER,HALF,FULL">0</state>
+	<state name="quality" defines="LOW,MEDIUM,HIGH,ULTRA">0</state>
+	
+	<!-- shaders -->
+	<shader pass="post"
+		fragment="core/shaders/screen_space/fragment/ssr_blur.frag"/>
+	
+	<!-- parameters -->
+	<parameter name="scale" type="slider">1.0</parameter>
+	<parameter name="visibility_roughness" type="constant">1.0 1.0 1.0 1.0</parameter>
+	
+	<!-- textures -->
+	<texture name="color" type="procedural"/>
+	<texture name="ssr_depth" type="procedural"/>
+	<texture name="normal" type="procedural"/>
+	<texture type="linear_depth"/>
+	<texture name="noise" filter="point">core/textures/common/noise.dds</texture>
+	
+</base_material>

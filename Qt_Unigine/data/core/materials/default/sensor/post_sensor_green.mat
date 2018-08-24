@@ -1,0 +1,19 @@
+<material version="2.6" name="post_sensor_green" base_material="post_sensor" editable="0" manual="1">
+	
+	<!-- textures -->
+	<texture name="heatlookup" filter="linear" wrap="clamp">core/textures/sensor/lut_green.dds</texture>
+	
+	<!-- parameters -->
+	<parameter name="ambient_heat_occlusion">-1</parameter>
+	<parameter name="influence_scene_pow">1.5</parameter>
+	<parameter name="influence_scene_scale">10</parameter>
+	<parameter name="global_temperature">0.1</parameter>
+	<parameter name="sensor_blur_scale">1</parameter>
+	<parameter name="sensor_blur_detail">0.642</parameter>
+	<parameter name="motion_blur_factor">0</parameter>
+	<parameter name="noise_level">0.05</parameter>
+	<parameter name="noise_size">678.5</parameter>
+	<parameter name="global_aux_pow">1.5</parameter>
+	<parameter name="global_aux_scale">0.5</parameter>
+	
+</material>

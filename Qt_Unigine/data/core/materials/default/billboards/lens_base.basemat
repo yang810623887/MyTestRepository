@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base_material version="2.0" name="lens_base">
+	
+	<state name="border_alpha" defines="name" >0</state>
+	<state name="dirt" defines="name" >0</state>
+	
+	<shader pass="ambient"
+		vertex="core/shaders/billboards/vertex/lens.vert"
+		fragment="core/shaders/billboards/fragment/lens.frag"/>
+		
+	<shader pass="wireframe"
+		defines="BASE_WIREFRAME"
+		vertex="core/shaders/billboards/vertex/lens.vert"
+		geometry="core/shaders/common/wireframe/wireframe.geom"
+		fragment="core/shaders/common/wireframe/wireframe.frag"/>		
+		
+	<parameter name="exposure" type="slider">1.0</parameter>
+	<parameter name="dirt_scale" type="slider">0.0</parameter>
+	
+</base_material>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Moc_File">
+      <UniqueIdentifier>{8c12d5ba-4f1e-4dd2-82fe-389529403f51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\properties">
+      <UniqueIdentifier>{aa5ae234-e426-4d65-9fc3-febd755c96df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\properties">
+      <UniqueIdentifier>{ce6929a9-c4a4-4e30-a242-59739fd686d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="inviwomainwindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_inviwomainwindow.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="consolewidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="helpwidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="processorlistwidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="settingswidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_consolewidget.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_helpwidget.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_processorlistwidget.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_settingswidget.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="processorpreview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="inviwomainwindow.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="helpwidget.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="inviwoqteditordefine.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="processorlistwidget.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="settingswidget.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="consolewidget.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="processorpreview.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

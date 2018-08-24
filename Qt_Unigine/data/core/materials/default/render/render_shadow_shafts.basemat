@@ -1,0 +1,16 @@
+<base_material version="2.0" name="render_shadow_shafts" hidden="1">
+	
+	<state name="channel" defines=",B_CHANNEL">0</state>
+	
+	<!-- shaders -->
+	<shader pass="post"
+		vertex="core/shaders/screen_space/vertex/shadow_shafts.vert"
+		fragment="core/shaders/screen_space/fragment/shadow_shafts.frag"/>
+	
+	<!-- textures -->
+	<texture name="color" type="procedural"/>
+	
+	<!-- parameters -->
+	<parameter name="texcoord" type="constant" >1.0 1.0 1.0 1.0</parameter>
+	<parameter name="exposure" type="slider" >1.0</parameter>
+</base_material>

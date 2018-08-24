@@ -1,0 +1,18 @@
+<base_material version="2.0" name="render_exposure_luminance" hidden="1">
+	
+	<state name="quadratic" defines="name">0</state>
+	
+	<!-- shaders -->
+	<shader pass="post"
+		fragment="core/shaders/screen_space/exposure/fragment/luminance.frag"/>
+	
+	<!-- textures -->
+	<texture name="average" type="procedural"/>
+	<texture name="luminance" type="procedural"/>
+	
+	<!-- parameters -->
+	<parameter name="exposure" type="slider" >1.0</parameter>
+	<parameter name="interpolation" type="slider">1.0</parameter>
+	<parameter name="min_luminance" type="slider">1.0</parameter>
+	<parameter name="max_luminance" type="slider">1.0</parameter>
+</base_material>

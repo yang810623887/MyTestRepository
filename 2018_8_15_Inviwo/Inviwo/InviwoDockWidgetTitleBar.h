@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+#include "raiiutils.h"
+
 class QPaintEvent;
 class QDockWidget;
 class QToolButton;

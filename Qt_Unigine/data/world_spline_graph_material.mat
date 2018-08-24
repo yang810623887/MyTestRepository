@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.7.1.0" name="world_spline_graph_material" guid="0b9bd74e87552363b112f62bb86526e12e40a55e" base_material="mesh_base">
+	<texture name="albedo">resources/mesh_road.dds</texture>
+</material>

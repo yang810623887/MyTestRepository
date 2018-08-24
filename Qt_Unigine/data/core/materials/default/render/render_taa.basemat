@@ -1,0 +1,28 @@
+<base_material version="2.0" name="render_taa" hidden="1">
+	<state name="filter_width" type="switch" items="width">0</state>
+	<state name="filter_height" type="switch" items="height">0</state>
+	
+	<state name="fix_flicker"			defines="name">0</state>
+	<state name="color_clamping"		defines="name">0</state>
+	<state name="velocity_clamping"		defines="name">0</state>
+	<state name="diagonal_neighbors"	defines="name">0</state>
+	<state name="catmull_resampling"	defines="name">0</state>
+	
+	<!-- shaders -->
+	<shader pass="post"
+		fragment="core/shaders/screen_space/fragment/taa.frag"/>
+	
+	<!-- textures -->
+	<texture name="color" type="procedural"/>
+	<texture name="color_old" type="procedural"/>
+	<texture type="opacity_depth"/>
+	<texture type="gbuffer_velocity"/>
+	
+	<!-- parameters -->
+	<parameter name="preserve_details" type="slider">0.0</parameter>
+	<parameter name="frame_count" type="slider">0.0</parameter>
+	<parameter name="velocity_threshold" type="slider">0.0</parameter>
+	<parameter name="max_frame_count" type="slider">0.0</parameter>
+	<parameter name="min_frame_count" type="slider">0.0</parameter>
+	
+</base_material>

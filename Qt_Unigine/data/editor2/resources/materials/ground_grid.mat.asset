@@ -1,0 +1,10 @@
+<asset version="2.00">
+	<guid>1a7ad4ce35be954595c3a0379b8962752234f2ee</guid>
+	<type>material</type>
+	<hash>66a95e1709873574deab2834d48a834abb29f627</hash>
+	<runtimes>
+		<runtime id="97647f40b8318e122b8616f9b867c53d9893edf1" name="ground_grid.mat">
+			<hash>beff5d79f5726d23f7a5765de8e5f117d68d8d4b</hash>
+		</runtime>
+	</runtimes>
+</asset>

@@ -3,6 +3,9 @@
 #include "helpwidget.h"
 #include "processorlistwidget.h"
 #include "propertylistwidget.h"
+#include "consolewidget.h"
+#include "networkeditorview.h"
+#include "networkeditor.h"
 
 #include <QDesktopWidget>
 
@@ -10,10 +13,21 @@ namespace inviwo{
 	InviwoMainWindow::InviwoMainWindow(InviwoApplicationQt* app)
 		: QMainWindow()
 		, app_(app)
+		, networkEditor_(nullptr)
 	{
 		app_->setMainWindow(this);
 
 		this->setAttribute(Qt::WA_AlwaysShowToolTips, true);
+
+		networkEditor_ = std::make_shared<NetworkEditor>(this);
+
+		consoleWidget_ = std::make_shared<ConsoleWidget>(this);
+
+
+
+		networkEditorView_ = new NetworkEditorView(networkEditor_.get(), this);
+//		NetworkEditorObserver::addObservation(networkEditor_.get());
+		setCentralWidget(networkEditorView_);
 
 		settingsWidget_ = new settingswidget(this);
 		addDockWidget(Qt::LeftDockWidgetArea, settingsWidget_);
@@ -27,6 +41,9 @@ namespace inviwo{
 
 		propertyListWidget_ = new PropertyListWidget(this);
 		addDockWidget(Qt::RightDockWidgetArea, propertyListWidget_);
+
+
+		addDockWidget(Qt::BottomDockWidgetArea, consoleWidget_.get());
 
 		const QDesktopWidget dw;
 		auto screen = dw.screenGeometry(this);
@@ -301,6 +318,9 @@ namespace inviwo{
 
 			propertyListWidget_->toggleViewAction()->setText(tr("&Property List"));
 			viewMenuItem->addAction(propertyListWidget_->toggleViewAction());
+
+			consoleWidget_->toggleViewAction()->setText(tr("&Output Console"));
+			viewMenuItem->addAction(consoleWidget_->toggleViewAction());
 
 			helpWidget_->toggleViewAction()->setText(tr("&Help"));
 			viewMenuItem->addAction(helpWidget_->toggleViewAction());

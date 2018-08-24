@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.7.1.0" base_material="sky_base" name="default_object_sky_volume" guid="f49c5d8d761687a28fb74181c46d470dd7e11e84" editable="0">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options two_sided="1" transparent="2"/>
+	<state name="surface">1</state>
+	<state name="inscattering">1</state>
+</material>

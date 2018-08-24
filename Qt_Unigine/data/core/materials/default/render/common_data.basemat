@@ -1,0 +1,19 @@
+<!--
+/* Common data material
+ * OUT_MRT 0: linear_depth
+ * OUT_MRT 1: screen_color_old_reprojection
+ * OUT_MRT 2: normal_unpack
+ */
+-->
+<base_material version="2.0" name="common_data" hidden="1">
+	
+	<!-- shaders -->
+	<shader pass="post"
+		fragment="core/shaders/screen_space/fragment/common_data.frag"/>
+	
+	<!-- textures -->
+	<texture type="screen_color_old"/>
+	<texture type="opacity_depth"/>
+	<texture type="gbuffer_velocity"/>
+	<texture type="gbuffer_normal"/>
+</base_material>

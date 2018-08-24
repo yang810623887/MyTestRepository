@@ -1,0 +1,94 @@
+<base_material version="2.0" name="sky_base" editable="0">
+	
+	<!-- options -->
+	<options depth_mask="0" cast_shadow="0" receive_shadow="0" cast_world_shadow="0" receive_world_shadow="0"/>
+	<options transparent="2"/>
+	
+	<!-- states -->
+	<state name="surface" internal="1" type="switch" items="sphere,clouds,shadow">0</state>
+	<state name="inscattering" internal="1" type="toggle">0</state>
+	<state name="ambient" type="switch" items="none,default" title="Environment and Emission" group="Light Passes"	 tooltip="Environment and emissions">1</state>
+	<state name="light_world" type="switch" items="none,default" title="Light World" group="Light Passes"	tooltip="&lt;p&gt;Enable light world rendering pass for the material.&lt;/p&gt;">1</state>
+	<state name="background" type="switch" items="none,single,double" group="Options"										tooltip="&lt;p&gt;Background cubemap textures to be used.&lt;/p&gt;">0</state>
+	<state name="clouds" group="Options"									tooltip="&lt;p&gt;Enable procedural clouds.&lt;/p&gt;">1</state>
+	<state name="volume" title="Soft Interaction" group="Options"	tooltip="&lt;p&gt;Enable soft depth interaction.&lt;/p&gt;">0</state>
+	<state name="turbulence" group="Options"						tooltip="&lt;p&gt;Enable the turbulence effect.&lt;/p&gt;">1</state>
+	<state name="geodetic" internal="1" defines="name">0</state>
+	
+	<!-- sphere ambient shaders -->
+	<shader pass="ambient" node="object_sky"
+		surface="0"
+		inscattering_defines=",INSCATTERING"
+		background_defines=",BACKGROUND_SINGLE,BACKGROUND_DOUBLE"
+		clouds_defines=",CLOUDS"
+		ambient="1"
+		vertex="core/shaders/sky/vertex/sphere.vert"
+		fragment="core/shaders/sky/fragment/sphere.frag"/>
+	
+	<!-- volume ambient shaders -->
+	<shader pass="ambient" node="object_sky"
+		surface="1"
+		turbulence_defines=",TURBULENCE"
+		inscattering_defines=",INSCATTERING"
+		volume_defines=",VOLUME"
+		ambient="1"
+		vertex="core/shaders/sky/vertex/volume.vert"
+		fragment="core/shaders/sky/fragment/volume.frag"/>
+	
+	<!-- shadow object post shaders -->
+	<shader pass="object_post" node="object_sky"
+		surface="2"
+		light_world="1"
+		vertex="core/shaders/sky/vertex/shadow.vert"
+		fragment="core/shaders/sky/fragment/shadow.frag"/>
+	
+	<!-- textures -->
+	<texture name="mask_0" surface="0,2" group="Clouds" tooltip="&lt;p&gt;First mask texture, 1 channel: R - mask.&lt;/p&gt;&lt;p&gt;This texture represents a mask for the 1st upper cloud layer.&lt;/p&gt;">core/textures/sky_base_mask_0.dds</texture>
+	<texture name="mask_1" surface="0,2" group="Clouds" tooltip="&lt;p&gt;Second mask texture, 1 channel: R - mask.&lt;/p&gt;&lt;p&gt;This texture represents a mask for the 2nd lower cloud layer.&lt;/p&gt;">core/textures/sky_base_mask_1.dds</texture>
+	<texture name="clouds_01" surface="0,2" group="Clouds" tooltip="&lt;p&gt;First noise texture, 1 channel: R - noise values.&lt;/p&gt;&lt;p&gt;This texture represents noise for the 1st upper cloud layer.&lt;/p&gt;">core/textures/sky_base_clouds_0.dds</texture>
+	<texture name="clouds_23" surface="0,2" group="Clouds" tooltip="&lt;p&gt;Second noise texture, 1 channel: R - noise values.&lt;/p&gt;&lt;p&gt;This texture represents noise for the 2nd lower cloud layer.&lt;/p&gt;">core/textures/sky_base_clouds_1.dds</texture>
+	<texture name="background_0" surface="0" background="1,2" wrap="clamp" group="Options" tooltip="&lt;p&gt;First sky cubemap background texture, 3 channels: RGB - color information.&lt;/p&gt;">core/textures/sky_base_background.dds</texture>
+	<texture name="background_1" surface="0" background="2" wrap="clamp" group="Options" tooltip="&lt;p&gt;Second sky cubemap background texture, 3 channels: RGB - color information.&lt;/p&gt;">core/textures/sky_base_background.dds</texture>
+	<texture name="noise" surface="1" filter="linear">core/textures/sky_base_noise.dds</texture>
+	<texture name="volume" surface="1" filter="linear" wrap="clamp_z">core/textures/sky_base_volume.dds</texture>
+	<texture name="density" surface="1" filter="linear">core/textures/sky_base_density.dds</texture>
+	<texture name="topology" unit="10" hidden="1" shader="all"/>
+	<texture type="opacity_depth" surface="1,2" unit="15"/>
+	
+	<!-- parameters -->
+	<group name="Transform">
+		<parameter name="sphere_transform" type="expression" widget="vec"	title="Sphere"		tooltip="&lt;p&gt;Transformation of the sky sphere:&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;X, Y - sphere scale along the X and Y axes respectively. Affect the circle of a horizon.&lt;/li&gt;&lt;li&gt;Z - sphere scale along the Z axis. Makes the sky look higher or lower.&lt;/li&gt;&lt;li&gt;W - vertical sphere offset. Positive values move the sphere down, negative - up. Can be used to remove cloud artifacts near the horizon.&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;">vec4(4.0f,4.0f,0.5f,0.25f)</parameter>
+		<parameter name="volume_transform" type="expression" widget="uv"	title="Volume"		tooltip="&lt;p&gt;Transformation of the volumetric clouds mask.&lt;/p&gt;">vec4(2,2,sin(time*0)*0+time*0.005*sin(2.61799),cos(time*0)*0+time*0.005*cos(2.61799))</parameter>
+		<parameter name="noise_transform" type="expression" widget="vec"	title="Noise"		tooltip="&lt;p&gt;Transformation of the volumetric noise texture.&lt;/p&gt;">vec3(12.0f,12.0f,1.0f)</parameter>
+		<parameter name="mask_0_transform" type="expression" widget="uv"	title="Mask 0"		tooltip="&lt;p&gt;Transformation of the first mask texture.&lt;/p&gt;">vec4(0.5,0.5,sin(time*0)*0+time*0.0025*sin(2.0944),cos(time*0)*0+time*0.0025*cos(2.0944))</parameter>
+		<parameter name="mask_1_transform" type="expression" widget="uv"	title="Mask 1"		tooltip="&lt;p&gt;Transformation of the second mask texture.&lt;/p&gt;">vec4(1,1,sin(time*0.0015)*0.3+time*0.0015*sin(1.39626),cos(time*0.0015)*0.3+time*0.0015*cos(1.39626))</parameter>
+		<parameter name="clouds_0_transform" type="expression" widget="uv"	title="Clouds 0"	tooltip="&lt;p&gt;First transformation of the first noise texture.&lt;/p&gt;">vec4(0.5,0.5,sin(time*0)*0+time*0.002*sin(2.18166),cos(time*0)*0+time*0.002*cos(2.18166))</parameter>
+		<parameter name="clouds_1_transform" type="expression" widget="uv"	title="Clouds 1"	tooltip="&lt;p&gt;Second transformation of the first noise texture.&lt;/p&gt;">vec4(2,2,sin(time*0)*0+time*0.004*sin(1.8326),cos(time*0)*0+time*0.004*cos(1.8326))</parameter>
+		<parameter name="clouds_2_transform" type="expression" widget="uv"	title="Clouds 2"	tooltip="&lt;p&gt;First transformation of the second noise texture.&lt;/p&gt;">vec4(3,3,sin(time*0)*0+time*0.0025*sin(1.22173),cos(time*0)*0+time*0.0025*cos(1.22173))</parameter>
+		<parameter name="clouds_3_transform" type="expression" widget="uv"	title="Clouds 3"	tooltip="&lt;p&gt;Second transformation of the second noise texture.&lt;/p&gt;">vec4(6,6,sin(time*0)*0+time*0.003*sin(1.74533),cos(time*0)*0+time*0.003*cos(1.74533))</parameter>
+	</group>
+	<group name="Volume">
+		<parameter name="volume_0_color" type="color"												title="Color 0"		tooltip="&lt;p&gt;Color of the volumetric clouds.&lt;/p&gt;">1.0 1.0 1.0 1.0</parameter>
+		<parameter name="volume_1_color" type="color"												title="Color 1"		tooltip="&lt;p&gt;Color of the volumetric clouds shadowed areas.&lt;/p&gt;">0.321569 0.396078 0.498039 1</parameter>
+		<parameter name="volume_01_scale" type="slider" min="0.0" max="4.0" flags="max_expand"		title="Multiplier"	tooltip="&lt;p&gt;Volumetric clouds color multiplier.&lt;/p&gt;">1.0</parameter>
+		<parameter name="volume_alpha" type="slider" min="0.0" max="2.0" flags="max_expand"			title="Alpha"		tooltip="&lt;p&gt;Volumetric clouds alpha value.&lt;/p&gt;">0.15</parameter>
+		<parameter name="volume_turbulence" type="slider" min="0.0" max="2.0" flags="max_expand"	title="Turbulence"	tooltip="&lt;p&gt;Volumetric clouds turbulence noise.&lt;/p&gt;">0.45</parameter>
+	</group>
+	<group name="Clouds">
+		<parameter name="clouds_01_scale" type="slider" min="0.0" max="4.0" flags="max_expand"		title="Clouds 01"		tooltip="&lt;p&gt;Color intensity of the first cloud layer.&lt;/p&gt;">0.6</parameter>
+		<parameter name="clouds_23_scale" type="slider" min="0.0" max="4.0" flags="max_expand"		title="Clouds 23"		tooltip="&lt;p&gt;Color intensity of the second cloud layer.&lt;/p&gt;">0.4</parameter>
+		<parameter name="clouds_01_threshold" type="slider" min="0.0" max="2.0" flags="max_expand"	title="Threshold 01"	tooltip="&lt;p&gt;Coefficient modulating the strength of masking for the first mask.&lt;/p&gt;">1.4</parameter>
+		<parameter name="clouds_23_threshold" type="slider" min="0.0" max="2.0" flags="max_expand"	title="Threshold 23"	tooltip="&lt;p&gt;Coefficient modulating the strength of masking for the second mask.&lt;/p&gt;">1.6</parameter>
+	</group>
+	<group name="Sphere">
+		<parameter name="sphere_scattering" type="slider" min="0.0" max="2.0" flags="max_expand"					title="Scattering"			tooltip="&lt;p&gt;Coefficient controlling the influence of atmospheric scattering on the sky sphere clouds.&lt;/p&gt;">0.5</parameter>
+		<parameter name="background_0_scale" background="1,2" type="slider" min="0.0" max="2.0" flags="max_expand"	title="Background 0"		tooltip="&lt;p&gt;Color multiplier for the first background cubemap texture.&lt;/p&gt;">1.0</parameter>
+		<parameter name="background_1_scale" background="2" type="slider" min="0.0" max="2.0" flags="max_expand"	title="Background 1"		tooltip="&lt;p&gt;Color multiplier for the second background cubemap texture.&lt;/p&gt;">1.0</parameter>
+	</group>
+	<group name="Options">
+		<parameter name="volume_scale" volume="1" type="slider" min="0.0" max="128.0" flags="max_expand"			title="Soft Interaction"	tooltip="&lt;p&gt;Clouds soft interaction scale.&lt;/p&gt;&lt;p&gt;Depth factor that controls the volumetric clouds dispersal depending on their position relative to the object.&lt;/p&gt;">64.0</parameter>
+	</group>
+	<group name="Shadow">
+		<parameter name="shadow_scale" type="slider" min="0.0" max="1.0"											title="Multiplier"			tooltip="&lt;p&gt;Determines the darkness of shadows cast from clouds to the surface beneath.&lt;/p&gt;">0.7</parameter>
+	</group>
+</base_material>

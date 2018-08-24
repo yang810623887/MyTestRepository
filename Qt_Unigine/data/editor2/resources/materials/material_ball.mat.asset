@@ -1,0 +1,10 @@
+<asset version="2.00">
+	<guid>606a00373e57c40097e973dc1461e1f7c127ea54</guid>
+	<type>material</type>
+	<hash>6042feb939731f8808d398c593cf5d4b94b67357</hash>
+	<runtimes>
+		<runtime id="9df2aab1f845dae54156db4f1c4f7650ad28e721" name="material_ball.mat">
+			<hash>28dcc44bad48f72b546a6d445511d095c48cf604</hash>
+		</runtime>
+	</runtimes>
+</asset>

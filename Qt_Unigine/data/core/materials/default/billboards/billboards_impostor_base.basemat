@@ -1,0 +1,67 @@
+<base_material version="2.0" name="billboards_impostor_base" editable="0">
+	<!-- states -->
+	<state name="alpha_fade" internal="1" type="toggle">0</state>
+	
+	<state name="deferred" group="Default"											title="Deferred Buffers" 	tooltip="&lt;p&gt;Enable deferred buffers rendering for the material.&lt;/p&gt;">1</state>
+	<state name="lerp"		defines=",LERP"		group="Default"		tooltip="&lt;p&gt;Enable smooth linear interpolation of sprites when the camera rotates around the object.&lt;/p&gt;">0</state>
+	
+	<group name="Post Processing">
+		<state name="material_ssao"				transparent="0,1"	deferred="1"	title="SSAO"				tooltip="&lt;p&gt;Enable the Screen Space Ambient Occlusion effect.&lt;/p&gt;">1</state>
+		<state name="material_ssr"				transparent="0,1"	deferred="1"	title="SSR"					tooltip="&lt;p&gt;Enable the Screen Space Reflections effect.&lt;/p&gt;">1</state>
+		<state name="material_sss"				transparent="0,1"	deferred="1"	title="SSS"					tooltip="&lt;p&gt;Enable the Subsurface Scattering effect.&lt;/p&gt;">0</state>
+		
+		<state name="material_dof"									deferred="1"	title="DOF"					tooltip="&lt;p&gt;Enable Depth Of Field effect.&lt;/p&gt;">1</state>
+		<state name="material_motion_blur"							deferred="1"	title="Motion Blur"			tooltip="&lt;p&gt;Enable the Motion Blur effect.&lt;/p&gt;">1</state>
+		<state name="material_sun_shafts"							deferred="1"	title="Sun Shafts"			tooltip="&lt;p&gt;Enable the Sun Shafts effect.&lt;/p&gt;">1</state>
+	</group>
+	
+	<!-- textures -->
+	<group name="Base">
+		<texture unit="0" name="diffuse" wrap="repeat" anisotropy="1" 					title="Diffuse"			tooltip="&lt;p&gt;Diffuse color texture, 4 channels: RGB - color, A - transparency information.&lt;/p&gt;">core/textures/common/white.dds</texture>
+		<texture unit="1" name="normal" wrap="repeat" format="signed" anisotropy="1"	title="Normal"			tooltip="&lt;p&gt;Normal texture, 2 channels: RG - normal map.&lt;/p&gt;&lt;p&gt;This texture is used to fake a relief on a surface instead of using more polygons.&lt;/p&gt;">core/textures/common/normal.dds</texture>
+	</group>
+	
+	<!-- parameters -->
+	<parameter name="material_mask" deferred="1" shared="0" type="expression" group="Default" widget="mask24"	title="Material Mask"	tooltip="&lt;p&gt;Material bitmask.&lt;/p&gt;&lt;p&gt;The decal will be projected onto a surface having this material assigned, if the material mask of the decal material matches this mask (one bit at least).&lt;/p&gt;">0xffffffff</parameter>
+	
+	<group name="Base">
+		<parameter name="diffuse_color" type="color"								title="Diffuse"					tooltip="&lt;p&gt;Diffuse color multiplier&lt;/p&gt;">1.0 1.0 1.0 1.0</parameter>
+		<parameter name="specular_color" type="color"								title="Specular"				tooltip="&lt;p&gt;Auxiliary specular color multiplier for the specular texture.&lt;/p&gt;&lt;p&gt;Can be used to specify different specular colors for a single texture or modifying the texture color on the spot.&lt;/p&gt;">0.0 0.0 0.0 1.0</parameter>
+		<parameter name="gloss_scale" type="slider"									title="Gloss"					tooltip="&lt;p&gt;Gloss multiplier, which determines the size of the highlight.&lt;/p&gt;&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;em&gt;Low&lt;/em&gt; values imitate wider highlights, typical for reflections from matte surfaces.&lt;/li&gt;&lt;li&gt;&lt;em&gt;High&lt;/em&gt; values imitate pinpoint highlights, typical for reflections from glossy surfaces.&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;">0.0</parameter>
+		<parameter name="normal_scale" type="slider" max="2.0" flags="max_expand"	title="Normal Intensity"		tooltip="&lt;p&gt;Intensity of the normal texture&lt;/p&gt;">1.0</parameter>
+		<parameter name="impostor_transform" type="expression"						title="Impostor Coordinates"	tooltip="&lt;p&gt;Impostor coordinates: X,Y - atlas size.&lt;/p&gt;" widget="uv">vec4(8.0f,2.0f,0.0f,0.0f)</parameter>
+	</group>
+	
+	<!-- wireframe shaders -->
+	<shader pass="wireframe" node="object_billboards"
+		defines="BASE_WIREFRAME"
+		vertex="core/shaders/billboards/vertex/impostor/default.vert"
+		geometry="core/shaders/common/wireframe/wireframe.geom"
+		fragment="core/shaders/common/wireframe/wireframe.frag"/>
+	
+	<!-- deferred shaders -->
+	<shader pass="deferred" node="object_billboards"
+		defines="BASE_DEFERRED"
+		alpha_fade_defines=",ALPHA_FADE"
+		deferred="1"
+		vertex="core/shaders/billboards/vertex/impostor/deferred.vert"
+		fragment="core/shaders/billboards/fragment/impostor/deferred.frag"/>
+	
+	<!-- depth_pre_pass shaders -->
+	<shader pass="depth_pre_pass" node="object_billboards"
+		defines="BASE_ALPHA_TEST"
+		transparent_defines=",ALPHA_TEST,TRANSPARENT_BLEND"
+		alpha_fade_defines=",ALPHA_FADE"
+		deferred="1"
+		vertex="core/shaders/billboards/vertex/impostor/depth.vert"
+		fragment="core/shaders/billboards/fragment/impostor/depth.frag"/>
+	
+	<!-- shadow shaders -->
+	<shader pass="shadow" node="object_billboards"
+		defines="BASE_SHADOW"
+		transparent_defines=",ALPHA_TEST,TRANSPARENT_BLEND"
+		alpha_fade_defines=",ALPHA_FADE"
+		vertex="core/shaders/billboards/vertex/impostor/depth.vert"
+		fragment="core/shaders/billboards/fragment/impostor/depth.frag"/>
+	
+</base_material>

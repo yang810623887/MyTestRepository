@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.7.1.0">
+	<node type="ObjectSky" collider="0">
+		<simulation>1</simulation>
+		<size>8000 8000 300</size>
+		<min_slices>256</min_slices>
+		<max_slices>512</max_slices>
+		<distribute>4</distribute>
+		<humidity>0.85</humidity>
+		<transition>0.5</transition>
+		<extinction>0.7</extinction>
+		<density_image>guid://78592c1ce78ec682e89f5558ff40fcf7a8deae68</density_image>
+		<density_velocity>30 30 0</density_velocity>
+		<density_offset>205.577 205.577 0</density_offset>
+		<density_layer>1</density_layer>
+		<surface name="sphere" material="56946260ff3c17b140ca59936fb05a7ca366e129" property="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa"/>
+		<surface name="volume" material="f49c5d8d761687a28fb74181c46d470dd7e11e84" property="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa"/>
+		<surface name="shadow" enabled="0" material="e81b3b747082995017c76997c81fa1dd09292104" property="d99ebc8ef5769d70b1e46992309cc3e7d1aa2faa"/>
+		<transform>1 0 0 0.0 0 1 0 0.0 0 0 1 0.0 0 0 0 1.0</transform>
+	</node>
+</nodes>

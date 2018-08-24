@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.5.0.2" name="sky_base_error" base_material="sky_base" manual="1" hidden="1">
+	<options depth_test="1" overlap="0"/>
+	<state name="clouds">0</state>
+	<state name="turbulence">0</state>
+	<parameter name="sphere_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="volume_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="noise_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="mask_0_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="mask_1_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="clouds_0_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="clouds_1_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="clouds_2_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="clouds_3_transform">vec4(0,0,0,0)</parameter>
+	<parameter name="volume_0_color">1 0 0 1</parameter>
+	<parameter name="volume_1_color">0.639215708 0 0 1</parameter>
+</material>

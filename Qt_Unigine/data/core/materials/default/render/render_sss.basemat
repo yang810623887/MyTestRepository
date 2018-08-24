@@ -1,0 +1,18 @@
+<base_material version="2.0" name="render_sss" hidden="1">
+	
+	<state name="quality" defines="QUALITY_0,QUALITY_1,QUALITY_2,QUALITY_3">0</state>
+	
+	<shader pass="post"
+		defines="FINAL"
+		fragment="core/shaders/screen_space/fragment/sss.frag"/>
+	
+	<texture name="color" type="procedural"/>
+	<texture type="current_depth"/>
+	<texture type="gbuffer_material_mask"/>
+	<texture type="gbuffer_shading"/>
+	<texture name="sss" type="procedural"/>
+	
+	<parameter name="color" type="color" >1.0 0.0 0.0 1.0</parameter>
+	<parameter name="radius" type="slider">1.0</parameter>
+	
+</base_material>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.7.1.0" base_material="sky_base" name="default_object_sky_sphere" guid="56946260ff3c17b140ca59936fb05a7ca366e129" editable="0">
+	<blend src="src_alpha" dest="one_minus_src_alpha"/>
+	<options transparent="2"/>
+	<state name="inscattering">1</state>
+</material>

@@ -1,0 +1,34 @@
+<base_material version="2.0" name="post_sensor">
+	<state name="filter_width" type="switch" internal="1" items="width">0</state>
+	<state name="filter_height" type="switch" internal="1" items="height">0</state>
+	
+	<!-- shaders -->
+	<shader pass="post"
+		defines="VBLUR,FINAL"
+		vertex="core/shaders/screen_space/vertex/sensor.vert"
+		fragment="core/shaders/screen_space/fragment/sensor_process.frag"/>
+	
+	<!-- textures -->
+	<texture unit="0" name="color" type="procedural"/>
+	<texture unit="1" type="auxiliary"/>
+	<texture unit="2" type="ssao"/>
+	<texture unit="3" name="heatlookup" filter="linear" wrap="clamp" title="Vision LUT" group="Base" tooltip="&lt;p&gt;Lookup texture for sensor, 4 channels: RGB - color information, A - not used.&lt;/p&gt;&lt;p&gt;This texture is used to map the sensor temperatures to colors familiar to human eyes.&lt;/p&gt;&lt;p&gt;For example, objects with high temperature can be represented by using different gradations of the red color.&lt;/p&gt;">core/textures/sensor/lut_white.dds</texture> 
+	<texture unit="4" type="gbuffer_velocity"/>
+	<texture name="sensor_color" type="filter" materials="post_sensor_calculate,post_sensor_velocity_blur,post_sensor_vblur"/>
+	
+	<!-- parameters -->
+	<parameter name="ambient_heat_occlusion" type="slider" min="-1.0" max="1.0" flags="max_expand"			title="Ambient Heat Occlusion"	tooltip="&lt;p&gt;Shows influence of SSAO on the temperature obtained from the thermal map.&lt;/p&gt;&lt;p&gt;The &lt;em&gt;lower&lt;/em&gt; the value, the lower the temperature in the shadowed areas (these areas will get cold faster).&lt;/p&gt;">-0.1</parameter>
+	<parameter name="influence_scene_pow" type="slider" min="0.0" max="10.0" flags="max_expand"				title="Influence Scene Power"	tooltip="&lt;p&gt;Degree of impact of the scene color on the resulting temperature.&lt;/p&gt;">2.0</parameter>
+	<parameter name="influence_scene_scale" type="slider" min="0.0" max="10.0" flags="max_expand"			title="Influence Scene Scale"	tooltip="&lt;p&gt;Coefficient for increasing intensity of the scene color.&lt;/p&gt;">1.0</parameter>
+	<parameter name="global_temperature" type="slider" min="-1.0" max="1.0" flags="max_expand"				title="Global Temperature"		tooltip="&lt;p&gt;Global temperature of the scene that increases or decreases the resulting temperature displayed by the sensor.&lt;/p&gt;">0.0</parameter>
+	<parameter name="sensor_blur_scale" type="slider" min="0.0" max="10.0" flags="max_expand"				title="Sensor Blur Power"		tooltip="&lt;p&gt;Radius of the blur effect applied to the temperature displayed by the sensor.&lt;/p&gt;">2.0</parameter>
+	<parameter name="sensor_blur_detail" type="slider" min="0.0" max="1.0" flags="max_expand"				title="Sensor Blur Detail"		tooltip="&lt;p&gt;Coefficient that allows adjusting sharpness of the blur effect.&lt;/p&gt;">0.5</parameter>
+	<parameter name="motion_blur_factor" type="slider" min="0.0" max="1000.0" flags="max_expand"			title="Motion Blur Strength"	tooltip="&lt;p&gt;Coefficient that controls blurring in motion (how blurred the displayed temperature will be when the camera moves).&lt;/p&gt;">100.0</parameter>
+	<parameter name="noise_level" type="slider" min="0.0" max="1.0" flags="max_expand"						title="Noise Count"				tooltip="&lt;p&gt;Level of the color noise.&lt;/p&gt;&lt;p&gt;The &lt;em&gt;lower&lt;/em&gt; the temperature in a specific area, the higher the color noise level will be.&lt;/p&gt;">0.025</parameter>
+	<parameter name="noise_size" type="slider" min="0.0" max="2000.0" flags="max_expand"					title="Noise Granule Size"		tooltip="&lt;p&gt;Size of the color noise.&lt;/p&gt;">400.0</parameter>
+	<parameter name="global_aux_pow" type="slider" min="0.0" max="10.0" flags="max_expand"					title="Auxiliary Buffer Power"	tooltip="&lt;p&gt;Degree of impact of the temperature obtained from the thermal map on the resulting temperature displayed by the sensor.&lt;/p&gt;">1.0</parameter>
+	<parameter name="global_aux_scale" type="slider" min="0.0" max="10.0" flags="max_expand"				title="Auxiliary Buffer Scale"	tooltip="&lt;p&gt;Coefficient to scale the temperature obtained from the thermal map.&lt;/p&gt;">1.0</parameter>
+	<parameter name="sensor_temperature_map_shift" type="slider" min="-1.0" max="1.0" flags="max_expand"	title="Sensor LUT Shift"		tooltip="&lt;p&gt;Offset of the resulting temperature in the vision LUT texture. This value can be used to correct mapping of the temperature to the color.&lt;/p&gt;">0.0</parameter>
+	<parameter name="sensor_temperature_map_scale" type="slider" min="0.0" max="10.0" flags="max_expand"	title="Sensor LUT Scale"		tooltip="&lt;p&gt;Coefficient to scale the resulting temperature when mapping the temperature to the color.&lt;/p&gt;">1.0</parameter>
+	
+</base_material>

@@ -1,0 +1,14 @@
+<base_material version="2.0" name="render_camera_velocity" hidden="1">
+	
+	<!-- shaders -->
+	<shader pass="post"
+		defines="BASE_DEFERRED"
+		fragment="core/shaders/screen_space/fragment/camera_velocity.frag"/>
+	
+	<texture type="current_depth"/>
+	
+	<parameter name="old_imodelview_x" type="constant">1.0 1.0 1.0 1.0</parameter>
+	<parameter name="old_imodelview_y" type="constant">1.0 1.0 1.0 1.0</parameter>
+	<parameter name="old_imodelview_z" type="constant">1.0 1.0 1.0 1.0</parameter>
+	
+</base_material>

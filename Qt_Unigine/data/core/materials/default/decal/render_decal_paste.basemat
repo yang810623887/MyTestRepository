@@ -1,0 +1,11 @@
+<base_material version="2.0" name="render_decal_paste" hidden="1">
+
+	<shader pass="post"
+		fragment="core/shaders/decal/paste.frag"/>
+
+	<!-- textures -->
+	<texture type="decal_depth"/>
+	<texture name="uncompressed_normal" type="procedural"/>
+	<texture name="uncompressed_roughness" type="procedural"/>
+
+</base_material>

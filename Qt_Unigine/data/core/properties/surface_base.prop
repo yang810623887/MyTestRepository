@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright (C) 2005-2018, UNIGINE Corp. All rights reserved.
+ *
+ * This file is a part of the UNIGINE 2.7.1 SDK.
+ *
+ * Your use and / or redistribution of this software in source and / or
+ * binary form, with or without modification, is subject to: (i) your
+ * ongoing acceptance of and compliance with the terms and conditions of
+ * the UNIGINE License Agreement; and (ii) your inclusion of this notice
+ * in any version of this software that you use or redistribute.
+ * A copy of the UNIGINE License Agreement is available by contacting
+ * UNIGINE Corp. at http://unigine.com/
+ */
+
+-->
+
+<!--
+/**************************************************************************\
+ *
+ * Surface base property
+ *
+\**************************************************************************/
+-->
+
+<property version="2.7.0.0" name="surface_base" editable="0" manual="1">
+	
+	<group name="Options">
+		<parameter name="intersection" type="toggle">1</parameter>
+		<parameter name="collision" type="toggle">1</parameter>
+	</group>
+	<group name="Physics">
+		<parameter collision="1" name="friction" type="float" min="0.0" max="4.0" flags="max_expand">0.5</parameter>
+		<parameter collision="1" name="restitution" type="float" min="0.0" max="1.0">0.5</parameter>
+	</group>
+	<group name="Sound">
+		<parameter intersection="1" name="occlusion" type="float" min="0.0" max="1.0">0.5</parameter>
+	</group>
+	
+</property>

@@ -52,6 +52,27 @@
     <Filter Include="Inviwo_module_qtwidgets\Sources">
       <UniqueIdentifier>{3d78bc11-d3f3-444f-8f78-b2f42f8475a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inviwo-core">
+      <UniqueIdentifier>{bb194c53-5094-4239-9019-8b58caf54fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inviwo-core\Source Files">
+      <UniqueIdentifier>{dc107570-daf1-4e89-b7a9-24b4e5126ba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inviwo-core\Header Files">
+      <UniqueIdentifier>{96579fb4-a33e-436d-8cc5-862447f10fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inviwo-core\Header Files\util">
+      <UniqueIdentifier>{abd2b5fb-72fc-4d27-8c5a-01e353025f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inviwo-core\Source Files\util">
+      <UniqueIdentifier>{c8f79134-e13d-46f3-a4fd-79439e98d85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inviwo_editor\header\properties">
+      <UniqueIdentifier>{fda3d8c6-d3f8-4fb6-857a-bc996b8e86b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inviwo_editor\Source\properties">
+      <UniqueIdentifier>{54c3d088-a821-45aa-aa73-0933921e148c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -84,6 +105,18 @@
     <ClCompile Include="propertylistwidget.cpp">
       <Filter>Inviwo_module_qtwidgets\Sources</Filter>
     </ClCompile>
+    <ClCompile Include="consolewidget.cpp">
+      <Filter>Inviwo_editor\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="networkeditor.cpp">
+      <Filter>Inviwo_editor\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="networkeditorview.cpp">
+      <Filter>Inviwo_editor\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="propertywidgetqt.cpp">
+      <Filter>Inviwo_editor\Source\properties</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="InviwoSplashScreen.h">
@@ -110,6 +143,12 @@
     <QtMoc Include="propertylistwidget.h">
       <Filter>Inviwo_module_qtwidgets\Headers</Filter>
     </QtMoc>
+    <QtMoc Include="consolewidget.h">
+      <Filter>Inviwo_editor\header</Filter>
+    </QtMoc>
+    <QtMoc Include="propertywidgetqt.h">
+      <Filter>Inviwo_editor\header\properties</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="Inviwo.qrc">
@@ -119,6 +158,15 @@
   <ItemGroup>
     <ClInclude Include="helpwidget.h">
       <Filter>Inviwo_editor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="networkeditor.h">
+      <Filter>Inviwo_editor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="networkeditorview.h">
+      <Filter>Inviwo_editor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="raiiutils.h">
+      <Filter>inviwo-core\Header Files\util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

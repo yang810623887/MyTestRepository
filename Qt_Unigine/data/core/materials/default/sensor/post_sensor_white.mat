@@ -1,0 +1,11 @@
+<material version="2.6" name="post_sensor_white" base_material="post_sensor" editable="0" manual="1">
+
+	<!-- parameters -->
+	<parameter name="ambient_heat_occlusion">-1</parameter>
+	<parameter name="sensor_blur_scale">1.1</parameter>
+	<parameter name="sensor_blur_detail">0.7</parameter>
+	<parameter name="noise_level">0.05</parameter>
+	<parameter name="global_aux_pow">2.5</parameter>
+	<parameter name="global_aux_scale">2.7</parameter>
+	
+</material>

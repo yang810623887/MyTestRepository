@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodes version="2.7.1.0">
+	<node type="SoundSource">
+		<sample_name>guid://e0db9f51925cafcaf7142ef137811b09861b5ef6</sample_name>
+		<sample_stream>1</sample_stream>
+		<time>63.3371</time>
+		<max_distance>5</max_distance>
+		<cone_outer_angle>180</cone_outer_angle>
+		<playing>1</playing>
+		<transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</transform>
+	</node>
+</nodes>

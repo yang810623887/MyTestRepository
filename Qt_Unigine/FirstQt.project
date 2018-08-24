@@ -1,0 +1,6976 @@
+{
+	"version": "2",
+	"project_settings": {
+		"name": "FirstQt",
+		"default_world": "FirstQt",
+		"editor_version": "editor2",
+		"engine_binaries": "development",
+		"launcher_gui": 0,
+		"launcher_console": 1,
+		"bin_flags": 6,
+		"precision": 1,
+		"precision_forced": "0",
+		"api": "qmakecpp",
+		"stereo": "",
+		"monitors": "",
+		"sound": "auto",
+		"plugins": [
+			"Collada",
+			"OpenFlight",
+			"FbxImporter"
+		],
+		"addons": [
+		],
+		"files": [
+			{
+				"file": "bin/",
+				"tags": [
+					"unigine",
+					"binaries",
+					"user_binaries",
+					"plugins"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/Collada_double_x64.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "1534922619156160"
+			},
+			{
+				"file": "bin/Collada_double_x64d.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "1534922619407040"
+			},
+			{
+				"file": "bin/Collada_double_x64d.pdb",
+				"tags": [
+					"plugins"
+				],
+				"hash": "15349226192822144"
+			},
+			{
+				"file": "bin/Editor2_double_x64.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261725967104"
+			},
+			{
+				"file": "bin/Editor2_double_x64d.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261727308544"
+			},
+			{
+				"file": "bin/Editor2_double_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618116453376"
+			},
+			{
+				"file": "bin/FbxImporter_double_x64.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "153492261913043712"
+			},
+			{
+				"file": "bin/FbxImporter_double_x64d.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "153492261917550336"
+			},
+			{
+				"file": "bin/FbxImporter_double_x64d.pdb",
+				"tags": [
+					"plugins"
+				],
+				"hash": "153492261915093760"
+			},
+			{
+				"file": "bin/FirstQt_x64.exe",
+				"tags": [
+					"user_binaries"
+				],
+				"hash": "1534922615458752"
+			},
+			{
+				"file": "bin/NCSEcw.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226189610808"
+			},
+			{
+				"file": "bin/OpenFlight_double_x64.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "1534922619158720"
+			},
+			{
+				"file": "bin/OpenFlight_double_x64d.dll",
+				"tags": [
+					"plugins"
+				],
+				"hash": "1534922619467968"
+			},
+			{
+				"file": "bin/OpenFlight_double_x64d.pdb",
+				"tags": [
+					"plugins"
+				],
+				"hash": "15349226193461120"
+			},
+			{
+				"file": "bin/Qt5Concurrent.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261629696"
+			},
+			{
+				"file": "bin/Qt5Core.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226165715968"
+			},
+			{
+				"file": "bin/Qt5Gui.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226165941760"
+			},
+			{
+				"file": "bin/Qt5Network.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226161213952"
+			},
+			{
+				"file": "bin/Qt5Widgets.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226165561344"
+			},
+			{
+				"file": "bin/Unigine_double_x64.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261518304000"
+			},
+			{
+				"file": "bin/Unigine_double_x64d.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261538560256"
+			},
+			{
+				"file": "bin/Unigine_double_x64d.pdb",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922616161329152"
+			},
+			{
+				"file": "bin/d3dcompiler_47.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226184173928"
+			},
+			{
+				"file": "bin/gdal.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261813219328"
+			},
+			{
+				"file": "bin/gdaldata/",
+				"tags": [
+					"binaries"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/gdaldata/compdcs.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226189116"
+			},
+			{
+				"file": "bin/gdaldata/coordinate_axis.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226188302"
+			},
+			{
+				"file": "bin/gdaldata/datum_shift.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618179890"
+			},
+			{
+				"file": "bin/gdaldata/ellipsoid.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261814365"
+			},
+			{
+				"file": "bin/gdaldata/gcs.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261853326"
+			},
+			{
+				"file": "bin/gdaldata/gcs.override.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618513"
+			},
+			{
+				"file": "bin/gdaldata/gdal_datum.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618234839"
+			},
+			{
+				"file": "bin/gdaldata/geoccs.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261814047"
+			},
+			{
+				"file": "bin/gdaldata/gt_datum.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261815804"
+			},
+			{
+				"file": "bin/gdaldata/gt_ellips.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226181719"
+			},
+			{
+				"file": "bin/gdaldata/ozi_datum.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226188482"
+			},
+			{
+				"file": "bin/gdaldata/ozi_ellips.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226181349"
+			},
+			{
+				"file": "bin/gdaldata/pcs.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618764672"
+			},
+			{
+				"file": "bin/gdaldata/pcs.override.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226181581"
+			},
+			{
+				"file": "bin/gdaldata/prime_meridian.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226181910"
+			},
+			{
+				"file": "bin/gdaldata/projop_wparm.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618278765"
+			},
+			{
+				"file": "bin/gdaldata/s57agencies.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261813304"
+			},
+			{
+				"file": "bin/gdaldata/s57attributes.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261820001"
+			},
+			{
+				"file": "bin/gdaldata/s57attributes_aml.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261818555"
+			},
+			{
+				"file": "bin/gdaldata/s57attributes_iw.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226188981"
+			},
+			{
+				"file": "bin/gdaldata/s57expectedinput.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261820885"
+			},
+			{
+				"file": "bin/gdaldata/s57objectclasses.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261853297"
+			},
+			{
+				"file": "bin/gdaldata/s57objectclasses_aml.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261864289"
+			},
+			{
+				"file": "bin/gdaldata/s57objectclasses_iw.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261837247"
+			},
+			{
+				"file": "bin/gdaldata/stateplane.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261810360"
+			},
+			{
+				"file": "bin/gdaldata/unit_of_measure.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261822291"
+			},
+			{
+				"file": "bin/gdaldata/vertcs.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261812679"
+			},
+			{
+				"file": "bin/gdaldata/vertcs.override.csv",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226181081"
+			},
+			{
+				"file": "bin/gdalplugins/",
+				"tags": [
+					"binaries"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/gdalplugins/gdal_ECW_JP2ECW.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618184320"
+			},
+			{
+				"file": "bin/imageformats/",
+				"tags": [
+					"binaries"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/imageformats/qgif.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "153492261630208"
+			},
+			{
+				"file": "bin/main_double_x64.exe",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922615425472"
+			},
+			{
+				"file": "bin/main_double_x64d.exe",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922615540672"
+			},
+			{
+				"file": "bin/msvcp120.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618660128"
+			},
+			{
+				"file": "bin/msvcr120.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922618963232"
+			},
+			{
+				"file": "bin/openal32.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "1534922619761856"
+			},
+			{
+				"file": "bin/platforms/",
+				"tags": [
+					"binaries"
+				],
+				"hash": ""
+			},
+			{
+				"file": "bin/platforms/qwindows.dll",
+				"tags": [
+					"binaries"
+				],
+				"hash": "15349226161337344"
+			},
+			{
+				"file": "data/",
+				"tags": [
+					"unigine",
+					"unigine_data",
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/FirstQt.cpp",
+				"tags": [
+					"project_data"
+				],
+				"hash": "15349226361483"
+			},
+			{
+				"file": "data/FirstQt.cpp.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1534922636227"
+			},
+			{
+				"file": "data/FirstQt.world",
+				"tags": [
+					"project_data"
+				],
+				"hash": "153492263635340"
+			},
+			{
+				"file": "data/FirstQt.world.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1534922636228"
+			},
+			{
+				"file": "data/core/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/assets.xml",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262057355"
+			},
+			{
+				"file": "data/core/gui/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/gui/console.ttf",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620115068"
+			},
+			{
+				"file": "data/core/gui/dialog_cancel.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620622"
+			},
+			{
+				"file": "data/core/gui/dialog_close.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620429"
+			},
+			{
+				"file": "data/core/gui/dialog_file_add.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226201102"
+			},
+			{
+				"file": "data/core/gui/dialog_file_list.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620306"
+			},
+			{
+				"file": "data/core/gui/dialog_file_open.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226201201"
+			},
+			{
+				"file": "data/core/gui/dialog_file_path.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226201673"
+			},
+			{
+				"file": "data/core/gui/dialog_file_remove.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226201246"
+			},
+			{
+				"file": "data/core/gui/dialog_image_a.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226201706"
+			},
+			{
+				"file": "data/core/gui/dialog_image_b.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226201798"
+			},
+			{
+				"file": "data/core/gui/dialog_image_g.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226202161"
+			},
+			{
+				"file": "data/core/gui/dialog_image_r.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226202009"
+			},
+			{
+				"file": "data/core/gui/dialog_ok.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620321"
+			},
+			{
+				"file": "data/core/gui/font.ttf",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620367112"
+			},
+			{
+				"file": "data/core/gui/fontb.ttf",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620352224"
+			},
+			{
+				"file": "data/core/gui/fontbi.ttf",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620226748"
+			},
+			{
+				"file": "data/core/gui/fonti.ttf",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620207808"
+			},
+			{
+				"file": "data/core/gui/gui.rc",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621436"
+			},
+			{
+				"file": "data/core/gui/gui_background.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262182"
+			},
+			{
+				"file": "data/core/gui/gui_border.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621139"
+			},
+			{
+				"file": "data/core/gui/gui_button.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621578"
+			},
+			{
+				"file": "data/core/gui/gui_checkbox.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211314"
+			},
+			{
+				"file": "data/core/gui/gui_combobox.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621155"
+			},
+			{
+				"file": "data/core/gui/gui_editor.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262186"
+			},
+			{
+				"file": "data/core/gui/gui_hpaned.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262198"
+			},
+			{
+				"file": "data/core/gui/gui_hscroll.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211305"
+			},
+			{
+				"file": "data/core/gui/gui_hslider.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621860"
+			},
+			{
+				"file": "data/core/gui/gui_hspacer.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621107"
+			},
+			{
+				"file": "data/core/gui/gui_mouse.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226215470"
+			},
+			{
+				"file": "data/core/gui/gui_selection.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621109"
+			},
+			{
+				"file": "data/core/gui/gui_spinbox.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621638"
+			},
+			{
+				"file": "data/core/gui/gui_tabbox.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621404"
+			},
+			{
+				"file": "data/core/gui/gui_tooltip.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621103"
+			},
+			{
+				"file": "data/core/gui/gui_treebox.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621267"
+			},
+			{
+				"file": "data/core/gui/gui_vpaned.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621103"
+			},
+			{
+				"file": "data/core/gui/gui_vscroll.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211423"
+			},
+			{
+				"file": "data/core/gui/gui_vslider.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211027"
+			},
+			{
+				"file": "data/core/gui/gui_vspacer.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621101"
+			},
+			{
+				"file": "data/core/gui/gui_white.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262179"
+			},
+			{
+				"file": "data/core/gui/gui_window.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621420"
+			},
+			{
+				"file": "data/core/gui/icon.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226215156"
+			},
+			{
+				"file": "data/core/gui/splash.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262190039"
+			},
+			{
+				"file": "data/core/gui/splash_eval.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621107472"
+			},
+			{
+				"file": "data/core/gui/unigine.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211477"
+			},
+			{
+				"file": "data/core/gui/watermark.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262111287"
+			},
+			{
+				"file": "data/core/gui/watermark_eval.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262121713"
+			},
+			{
+				"file": "data/core/gui/window_close.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211150"
+			},
+			{
+				"file": "data/core/locale/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/locale/unigine.locale",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262119889"
+			},
+			{
+				"file": "data/core/materials/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/buildings/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_0.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621441"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_0_level_1_blank.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621397"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_0_level_2_blank.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621397"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_0_level_2_complex.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621448"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_0_roof.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211360"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_1.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621441"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_1_level_1_blank.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621397"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_1_level_2_blank.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621397"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_1_level_2_complex.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621448"
+			},
+			{
+				"file": "data/core/materials/buildings/buildings_preset_1_roof.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226211360"
+			},
+			{
+				"file": "data/core/materials/default/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/bake_voxel_probe/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/bake_voxel_probe/bake_voxel.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621178"
+			},
+			{
+				"file": "data/core/materials/default/bake_voxel_probe/bake_voxel_final.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621190"
+			},
+			{
+				"file": "data/core/materials/default/bake_voxel_probe/bake_voxel_intersection.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922621259"
+			},
+			{
+				"file": "data/core/materials/default/bake_voxel_probe/bake_voxel_intersection_clear.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622216"
+			},
+			{
+				"file": "data/core/materials/default/bake_voxel_probe/bake_voxel_occlusion.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622253"
+			},
+			{
+				"file": "data/core/materials/default/bake_voxel_probe/bake_voxel_occlusion_clear.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622210"
+			},
+			{
+				"file": "data/core/materials/default/billboards/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/billboards/billboards_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262214282"
+			},
+			{
+				"file": "data/core/materials/default/billboards/billboards_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622571"
+			},
+			{
+				"file": "data/core/materials/default/billboards/billboards_cloud_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226223436"
+			},
+			{
+				"file": "data/core/materials/default/billboards/billboards_impostor_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226225112"
+			},
+			{
+				"file": "data/core/materials/default/billboards/billboards_stars.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622559"
+			},
+			{
+				"file": "data/core/materials/default/billboards/lens_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622692"
+			},
+			{
+				"file": "data/core/materials/default/billboards/lens_visibility.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622269"
+			},
+			{
+				"file": "data/core/materials/default/clouds/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/clouds/clouds_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262210733"
+			},
+			{
+				"file": "data/core/materials/default/clouds/render_clouds_compositor.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226221498"
+			},
+			{
+				"file": "data/core/materials/default/clouds/render_clouds_copy.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622652"
+			},
+			{
+				"file": "data/core/materials/default/clouds/render_clouds_curved_frustum.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622198"
+			},
+			{
+				"file": "data/core/materials/default/clouds/render_clouds_dynamic_coverage.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622530"
+			},
+			{
+				"file": "data/core/materials/default/clouds/render_clouds_intersection.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622887"
+			},
+			{
+				"file": "data/core/materials/default/clouds/render_clouds_reprojection.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622197"
+			},
+			{
+				"file": "data/core/materials/default/debug/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_albedo.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622289"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_ambient_light.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622618"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_bent_normals.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622330"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_bevel.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622317"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_cubemaps.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622306"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_diffuse_light.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622411"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_highlights.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622301"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_lights.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622350"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_materials.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622264"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_metalness.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622325"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_normals.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622320"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_reflections.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622411"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_roughness.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622373"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_ssao.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622331"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_ssgi.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622282"
+			},
+			{
+				"file": "data/core/materials/default/debug/debug_ssr.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622328"
+			},
+			{
+				"file": "data/core/materials/default/decal/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/decal/decal_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262217107"
+			},
+			{
+				"file": "data/core/materials/default/decal/decal_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622361"
+			},
+			{
+				"file": "data/core/materials/default/decal/render_decal_copy.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622264"
+			},
+			{
+				"file": "data/core/materials/default/decal/render_decal_paste.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622319"
+			},
+			{
+				"file": "data/core/materials/default/grass/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/grass/grass_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262213879"
+			},
+			{
+				"file": "data/core/materials/default/grass/grass_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622462"
+			},
+			{
+				"file": "data/core/materials/default/grass/grass_impostor_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262211668"
+			},
+			{
+				"file": "data/core/materials/default/gui/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/gui/gui_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226223302"
+			},
+			{
+				"file": "data/core/materials/default/gui/gui_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622404"
+			},
+			{
+				"file": "data/core/materials/default/gui/text_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226221274"
+			},
+			{
+				"file": "data/core/materials/default/gui/text_base_error.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226221072"
+			},
+			{
+				"file": "data/core/materials/default/mesh/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/mesh/mesh_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262250444"
+			},
+			{
+				"file": "data/core/materials/default/mesh/mesh_base_baked_light.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622414"
+			},
+			{
+				"file": "data/core/materials/default/mesh/mesh_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622740"
+			},
+			{
+				"file": "data/core/materials/default/mesh/mesh_static_shadow.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622519"
+			},
+			{
+				"file": "data/core/materials/default/particles/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/particles/particles_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226229881"
+			},
+			{
+				"file": "data/core/materials/default/particles/particles_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622715"
+			},
+			{
+				"file": "data/core/materials/default/post/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/post/post_blur_radial.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622299"
+			},
+			{
+				"file": "data/core/materials/default/post/post_color_correction.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622443"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_albedo.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622288"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_auxiliary.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622308"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_bent_normal.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622318"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_bevel.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622317"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_border.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622244"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_dof_mask.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622307"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_f0.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622313"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_lightmap.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922622293"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_metalness.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623321"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_microfiber.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623322"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_normal.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623314"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_occlusion.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623320"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_opacity_depth.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623330"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_roughness.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623320"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_scene_depth.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623325"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_ssao.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623305"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_translucent.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623321"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_velocity.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623288"
+			},
+			{
+				"file": "data/core/materials/default/post/post_deferred_water_normal.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623320"
+			},
+			{
+				"file": "data/core/materials/default/post/post_filter_rgb2rgbl.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623210"
+			},
+			{
+				"file": "data/core/materials/default/post/post_filter_rgb2yuv.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623207"
+			},
+			{
+				"file": "data/core/materials/default/post/post_filter_sobel.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623397"
+			},
+			{
+				"file": "data/core/materials/default/post/post_filter_wet.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226231688"
+			},
+			{
+				"file": "data/core/materials/default/post/post_hblur_2d.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623211"
+			},
+			{
+				"file": "data/core/materials/default/post/post_hblur_cube.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623275"
+			},
+			{
+				"file": "data/core/materials/default/post/post_hblur_gauss.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623314"
+			},
+			{
+				"file": "data/core/materials/default/post/post_hblur_mask.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623371"
+			},
+			{
+				"file": "data/core/materials/default/post/post_stereo_anaglyph.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623285"
+			},
+			{
+				"file": "data/core/materials/default/post/post_stereo_horizontal.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623289"
+			},
+			{
+				"file": "data/core/materials/default/post/post_stereo_interlaced.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623289"
+			},
+			{
+				"file": "data/core/materials/default/post/post_stereo_replicate.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623240"
+			},
+			{
+				"file": "data/core/materials/default/post/post_stereo_separate.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623285"
+			},
+			{
+				"file": "data/core/materials/default/post/post_stereo_vertical.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623285"
+			},
+			{
+				"file": "data/core/materials/default/post/post_vblur_2d.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623210"
+			},
+			{
+				"file": "data/core/materials/default/post/post_vblur_cube.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623275"
+			},
+			{
+				"file": "data/core/materials/default/post/post_vblur_gauss.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623314"
+			},
+			{
+				"file": "data/core/materials/default/post/post_vblur_mask.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623370"
+			},
+			{
+				"file": "data/core/materials/default/render/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/render/common_data.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623480"
+			},
+			{
+				"file": "data/core/materials/default/render/convert_specular_to_metalness.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623295"
+			},
+			{
+				"file": "data/core/materials/default/render/render_bloom_composite.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623792"
+			},
+			{
+				"file": "data/core/materials/default/render/render_bloom_hblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623332"
+			},
+			{
+				"file": "data/core/materials/default/render/render_bloom_vblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623332"
+			},
+			{
+				"file": "data/core/materials/default/render/render_blur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623637"
+			},
+			{
+				"file": "data/core/materials/default/render/render_bright.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623319"
+			},
+			{
+				"file": "data/core/materials/default/render/render_camera_velocity.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623504"
+			},
+			{
+				"file": "data/core/materials/default/render/render_clear_material_mask.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623252"
+			},
+			{
+				"file": "data/core/materials/default/render/render_composite.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226231580"
+			},
+			{
+				"file": "data/core/materials/default/render/render_composite_deferred.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226238371"
+			},
+			{
+				"file": "data/core/materials/default/render/render_copy_2d.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623222"
+			},
+			{
+				"file": "data/core/materials/default/render/render_copy_2d_bicubic.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623264"
+			},
+			{
+				"file": "data/core/materials/default/render/render_copy_2d_isrgb.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623246"
+			},
+			{
+				"file": "data/core/materials/default/render/render_copy_2d_srgb.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623244"
+			},
+			{
+				"file": "data/core/materials/default/render/render_copy_cube.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623283"
+			},
+			{
+				"file": "data/core/materials/default/render/render_cross.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623553"
+			},
+			{
+				"file": "data/core/materials/default/render/render_denoise.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623208"
+			},
+			{
+				"file": "data/core/materials/default/render/render_dof.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623777"
+			},
+			{
+				"file": "data/core/materials/default/render/render_dof_final.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623475"
+			},
+			{
+				"file": "data/core/materials/default/render/render_dof_mask.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623622"
+			},
+			{
+				"file": "data/core/materials/default/render/render_dof_mask_blur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623470"
+			},
+			{
+				"file": "data/core/materials/default/render/render_dof_mask_focus.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623333"
+			},
+			{
+				"file": "data/core/materials/default/render/render_environment.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226231473"
+			},
+			{
+				"file": "data/core/materials/default/render/render_environment_cube.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623378"
+			},
+			{
+				"file": "data/core/materials/default/render/render_exposure.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623264"
+			},
+			{
+				"file": "data/core/materials/default/render/render_exposure_average.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623382"
+			},
+			{
+				"file": "data/core/materials/default/render/render_exposure_luminance.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623641"
+			},
+			{
+				"file": "data/core/materials/default/render/render_exposure_scale.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623325"
+			},
+			{
+				"file": "data/core/materials/default/render/render_fade.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922623324"
+			},
+			{
+				"file": "data/core/materials/default/render/render_filter_hblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624318"
+			},
+			{
+				"file": "data/core/materials/default/render/render_filter_vblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624318"
+			},
+			{
+				"file": "data/core/materials/default/render/render_fxaa.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624407"
+			},
+			{
+				"file": "data/core/materials/default/render/render_hdr_hblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624334"
+			},
+			{
+				"file": "data/core/materials/default/render/render_hdr_vblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624334"
+			},
+			{
+				"file": "data/core/materials/default/render/render_lens.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624817"
+			},
+			{
+				"file": "data/core/materials/default/render/render_motion_blur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624841"
+			},
+			{
+				"file": "data/core/materials/default/render/render_panorama.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624647"
+			},
+			{
+				"file": "data/core/materials/default/render/render_panorama_360.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624330"
+			},
+			{
+				"file": "data/core/materials/default/render/render_query.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624311"
+			},
+			{
+				"file": "data/core/materials/default/render/render_refraction.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624525"
+			},
+			{
+				"file": "data/core/materials/default/render/render_scattering_lut.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241505"
+			},
+			{
+				"file": "data/core/materials/default/render/render_shadow_shafts.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624533"
+			},
+			{
+				"file": "data/core/materials/default/render/render_shadow_shafts_sample.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624521"
+			},
+			{
+				"file": "data/core/materials/default/render/render_shafts.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624693"
+			},
+			{
+				"file": "data/core/materials/default/render/render_sharpen.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624324"
+			},
+			{
+				"file": "data/core/materials/default/render/render_srgb_correction.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624344"
+			},
+			{
+				"file": "data/core/materials/default/render/render_ssao.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624617"
+			},
+			{
+				"file": "data/core/materials/default/render/render_ssbevel.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624658"
+			},
+			{
+				"file": "data/core/materials/default/render/render_ssgi.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624717"
+			},
+			{
+				"file": "data/core/materials/default/render/render_ssr.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241257"
+			},
+			{
+				"file": "data/core/materials/default/render/render_ssr_blur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624812"
+			},
+			{
+				"file": "data/core/materials/default/render/render_ssrtgi.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241666"
+			},
+			{
+				"file": "data/core/materials/default/render/render_ssrtgi_upscaling.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624954"
+			},
+			{
+				"file": "data/core/materials/default/render/render_sss.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624582"
+			},
+			{
+				"file": "data/core/materials/default/render/render_sss_horizontal.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624490"
+			},
+			{
+				"file": "data/core/materials/default/render/render_sss_vertical.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624486"
+			},
+			{
+				"file": "data/core/materials/default/render/render_surround_border.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624332"
+			},
+			{
+				"file": "data/core/materials/default/render/render_taa.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241128"
+			},
+			{
+				"file": "data/core/materials/default/render/render_transparent_blur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624398"
+			},
+			{
+				"file": "data/core/materials/default/render/render_unpack_normal.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624213"
+			},
+			{
+				"file": "data/core/materials/default/render/render_vertex_normal.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624268"
+			},
+			{
+				"file": "data/core/materials/default/render_light/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/render_light/render_light.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226242599"
+			},
+			{
+				"file": "data/core/materials/default/render_light/render_light_env_probe.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241135"
+			},
+			{
+				"file": "data/core/materials/default/render_light/render_light_voxel_probe.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241072"
+			},
+			{
+				"file": "data/core/materials/default/render_light/sky_environment.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241068"
+			},
+			{
+				"file": "data/core/materials/default/sensor/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226244739"
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor_calculate.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226242056"
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor_green.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624840"
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor_heat.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624695"
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor_red.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624642"
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor_vblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226242241"
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor_velocity_blur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226242257"
+			},
+			{
+				"file": "data/core/materials/default/sensor/post_sensor_white.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624451"
+			},
+			{
+				"file": "data/core/materials/default/sky/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/sky/sky_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262410019"
+			},
+			{
+				"file": "data/core/materials/default/sky/sky_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624939"
+			},
+			{
+				"file": "data/core/materials/default/terrain/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/terrain/terrain_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226247051"
+			},
+			{
+				"file": "data/core/materials/default/terrain/terrain_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624591"
+			},
+			{
+				"file": "data/core/materials/default/terrain/terrain_global_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226247478"
+			},
+			{
+				"file": "data/core/materials/default/utils/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/utils/compute_dxt_compression.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624850"
+			},
+			{
+				"file": "data/core/materials/default/utils/compute_ggx_mipmaps.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624566"
+			},
+			{
+				"file": "data/core/materials/default/utils/compute_noise.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624632"
+			},
+			{
+				"file": "data/core/materials/default/utils/compute_shoreline_field.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624419"
+			},
+			{
+				"file": "data/core/materials/default/volume/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_cloud_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226242839"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_fog_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226242459"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_fog_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624427"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_light_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226241709"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_light_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922624269"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_omni_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226252828"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_omni_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625491"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_proj_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226253065"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_proj_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625542"
+			},
+			{
+				"file": "data/core/materials/default/volume/volume_shaft_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226254616"
+			},
+			{
+				"file": "data/core/materials/default/water/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/default/water/compute_shoreline_wetness.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625489"
+			},
+			{
+				"file": "data/core/materials/default/water/render_composite_deferred_overwater.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226252003"
+			},
+			{
+				"file": "data/core/materials/default/water/render_composite_deferred_underwater.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251409"
+			},
+			{
+				"file": "data/core/materials/default/water/render_water_line.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625316"
+			},
+			{
+				"file": "data/core/materials/default/water/render_water_underwater_hblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625600"
+			},
+			{
+				"file": "data/core/materials/default/water/render_water_underwater_vblur.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625600"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262525716"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625959"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_0.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251429"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_1.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251022"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_10.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251561"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_11.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251622"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_12.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251502"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_2.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251052"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_3.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251116"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_4.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251673"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_5.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251612"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_6.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251620"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_7.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251562"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_8.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251564"
+			},
+			{
+				"file": "data/core/materials/default/water/water_global_beaufort_9.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251502"
+			},
+			{
+				"file": "data/core/materials/default/water/water_mesh_base.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262515870"
+			},
+			{
+				"file": "data/core/materials/default/water/water_mesh_base_error.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625340"
+			},
+			{
+				"file": "data/core/materials/syncker/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/materials/syncker/syncker_box.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625845"
+			},
+			{
+				"file": "data/core/materials/syncker/syncker_sphere.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625853"
+			},
+			{
+				"file": "data/core/meshes/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/meshes/material_ball.mesh",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625592049"
+			},
+			{
+				"file": "data/core/properties/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/properties/node_base.prop",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922625939"
+			},
+			{
+				"file": "data/core/properties/surface_base.prop",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251480"
+			},
+			{
+				"file": "data/core/scripts/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/scripts/array.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226253706"
+			},
+			{
+				"file": "data/core/scripts/benchmark/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/scripts/benchmark/automation.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262515517"
+			},
+			{
+				"file": "data/core/scripts/benchmark/benchmark.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262516670"
+			},
+			{
+				"file": "data/core/scripts/benchmark/frame.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251872"
+			},
+			{
+				"file": "data/core/scripts/benchmark/phoronix.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226251679"
+			},
+			{
+				"file": "data/core/scripts/callback.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226254996"
+			},
+			{
+				"file": "data/core/scripts/euler.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226254332"
+			},
+			{
+				"file": "data/core/scripts/image_atlas.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226256205"
+			},
+			{
+				"file": "data/core/scripts/noise.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226252878"
+			},
+			{
+				"file": "data/core/scripts/performance.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226252948"
+			},
+			{
+				"file": "data/core/scripts/primitives.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226255644"
+			},
+			{
+				"file": "data/core/scripts/projection.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226258481"
+			},
+			{
+				"file": "data/core/scripts/samples.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262532551"
+			},
+			{
+				"file": "data/core/scripts/system/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/scripts/system/stereo.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263731"
+			},
+			{
+				"file": "data/core/scripts/system/stereo.ui",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262735"
+			},
+			{
+				"file": "data/core/scripts/system/system.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262640084"
+			},
+			{
+				"file": "data/core/scripts/system/wall.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262610819"
+			},
+			{
+				"file": "data/core/scripts/system/wall.ui",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262589"
+			},
+			{
+				"file": "data/core/scripts/time.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226255193"
+			},
+			{
+				"file": "data/core/scripts/tuple.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226252043"
+			},
+			{
+				"file": "data/core/scripts/underscore.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262547013"
+			},
+			{
+				"file": "data/core/scripts/utils.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226256367"
+			},
+			{
+				"file": "data/core/shaders.ung",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922620290197"
+			},
+			{
+				"file": "data/core/sounds/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/sounds/sound_source.oga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922626599674"
+			},
+			{
+				"file": "data/core/systems/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/syncker/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/syncker/gui/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/syncker/gui/manipulator_rotator.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226266925"
+			},
+			{
+				"file": "data/core/systems/syncker/gui/manipulator_scaler.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263901"
+			},
+			{
+				"file": "data/core/systems/syncker/gui/manipulator_selector.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226264753"
+			},
+			{
+				"file": "data/core/systems/syncker/gui/manipulator_translator.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226265555"
+			},
+			{
+				"file": "data/core/systems/syncker/unigine.cpp",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226261991"
+			},
+			{
+				"file": "data/core/systems/tracker/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/tracker/editor/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_line_add.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262600"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_line_clone.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262629"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_line_down.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263136"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_line_remove.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263083"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_line_save.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262101"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_line_up.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263067"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_time_loop.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226261719"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_time_next.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226261184"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_time_play.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226261108"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_time_prev.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226261083"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/images/tracker_time_settings.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226265395"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262668703"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_dialog_node.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226269478"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_dialog_parameter.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263604"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_dialog_settings.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263660"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226267134"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_color.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262327"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_environment.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262489"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_file.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262579"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_float.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262262"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_material.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262438"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_node.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262374"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_property.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262438"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_switch.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262431"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_toggle.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262381"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_track.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226263972"
+			},
+			{
+				"file": "data/core/systems/tracker/editor/tracker_editor_parameter_vec3.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262610177"
+			},
+			{
+				"file": "data/core/systems/tracker/parameters/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/tracker/parameters/game.parameters",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262408"
+			},
+			{
+				"file": "data/core/systems/tracker/parameters/material.parameters",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262614534"
+			},
+			{
+				"file": "data/core/systems/tracker/parameters/node.parameters",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262635678"
+			},
+			{
+				"file": "data/core/systems/tracker/parameters/property.parameters",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262611331"
+			},
+			{
+				"file": "data/core/systems/tracker/parameters/render.parameters",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262643826"
+			},
+			{
+				"file": "data/core/systems/tracker/parameters/sound.parameters",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226264880"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226269464"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262629692"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_color.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226265177"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_environment.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226267741"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_float.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226264130"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_node.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226265486"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_string.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226264761"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_switch.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226265231"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_toggle.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226264592"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_track.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226265963"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_parameter_vec3.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262610226"
+			},
+			{
+				"file": "data/core/systems/tracker/tracker_track.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262610525"
+			},
+			{
+				"file": "data/core/systems/widgets/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/widgets/images/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_dialog_node.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262731222"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_graph.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272235"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_arrange_x.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271301"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_arrange_xy.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271761"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_arrange_y.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271410"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_key_auto.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271903"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_key_break.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272220"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_key_constant.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271273"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_key_linear.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272060"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_key_remove.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271316"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_key_smooth.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272147"
+			},
+			{
+				"file": "data/core/systems/widgets/images/widget_track_key_snap.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272204"
+			},
+			{
+				"file": "data/core/systems/widgets/widget.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262612313"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_button.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226261950"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_canvas.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226267949"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_checkbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226261320"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_combobox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226262685"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_deform.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262713361"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273471"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog_color.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272044"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog_file.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226274657"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog_image.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271949"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog_material.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226275174"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog_message.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272458"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog_node.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226276025"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_dialog_property.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226275205"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_editline.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272367"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_edittext.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272734"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_graph.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262733544"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_gridbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272333"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_groupbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272302"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_hbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271926"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_hpaned.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271533"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_icon.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271793"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_interface.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226275361"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_label.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271258"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262736253"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_color.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273822"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_environment.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226278634"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_file.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273524"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_material.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273498"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_node.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273535"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_property.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273498"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_switch.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226276674"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_toggle.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272836"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_line_track.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262713387"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_listbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273329"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_menubar.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272464"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_menubox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226276767"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_scrollbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273148"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_slider.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271625"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_spacer.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271175"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_spinbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271486"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_sprite.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273777"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_tabbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226273116"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_table.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262715688"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_time.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262714399"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_track.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262756044"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_treebox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226276369"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_vbox.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271926"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_vpaned.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271533"
+			},
+			{
+				"file": "data/core/systems/widgets/widget_window.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226272431"
+			},
+			{
+				"file": "data/core/textures/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/buildings/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/buildings/b1_level1_atlas_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226281398248"
+			},
+			{
+				"file": "data/core/textures/buildings/b1_level1_atlas_blank_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226281398248"
+			},
+			{
+				"file": "data/core/textures/buildings/b1_level2_atlas_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282796344"
+			},
+			{
+				"file": "data/core/textures/buildings/b1_level2_atlas_blank_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282796344"
+			},
+			{
+				"file": "data/core/textures/buildings/b2_level1_atlas_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226281398248"
+			},
+			{
+				"file": "data/core/textures/buildings/b2_level1_atlas_blank_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226281398248"
+			},
+			{
+				"file": "data/core/textures/buildings/b2_level2_atlas_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282796344"
+			},
+			{
+				"file": "data/core/textures/buildings/b2_level2_atlas_blank_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282796344"
+			},
+			{
+				"file": "data/core/textures/buildings/roof_bitumed_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628699192"
+			},
+			{
+				"file": "data/core/textures/buildings/roof_bitumed_sh.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628699192"
+			},
+			{
+				"file": "data/core/textures/buildings/roof_detail.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629262271"
+			},
+			{
+				"file": "data/core/textures/clouds/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/clouds/cloud_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226299587108"
+			},
+			{
+				"file": "data/core/textures/clouds/cloud_noise_detail.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629131200"
+			},
+			{
+				"file": "data/core/textures/clouds/curl_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262987168"
+			},
+			{
+				"file": "data/core/textures/clouds/default_coverage.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226291398228"
+			},
+			{
+				"file": "data/core/textures/common/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/common/black.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226291492"
+			},
+			{
+				"file": "data/core/textures/common/checker_d.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629174904"
+			},
+			{
+				"file": "data/core/textures/common/environment_default.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262965648"
+			},
+			{
+				"file": "data/core/textures/common/environment_probe_default.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226294194416"
+			},
+			{
+				"file": "data/core/textures/common/environment_white.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629262256"
+			},
+			{
+				"file": "data/core/textures/common/grain.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262916532"
+			},
+			{
+				"file": "data/core/textures/common/noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226292796340"
+			},
+			{
+				"file": "data/core/textures/common/normal.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629496"
+			},
+			{
+				"file": "data/core/textures/common/red.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226291488"
+			},
+			{
+				"file": "data/core/textures/common/white.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226291492"
+			},
+			{
+				"file": "data/core/textures/grass/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/grass/noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262943832"
+			},
+			{
+				"file": "data/core/textures/leaf/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/leaf/color.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226292189"
+			},
+			{
+				"file": "data/core/textures/leaf/noise_2d.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262943832"
+			},
+			{
+				"file": "data/core/textures/leaf/noise_3d.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629149925"
+			},
+			{
+				"file": "data/core/textures/lens_flares_default.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226271179088"
+			},
+			{
+				"file": "data/core/textures/light_base_omni.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262716592"
+			},
+			{
+				"file": "data/core/textures/light_base_proj.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262716511"
+			},
+			{
+				"file": "data/core/textures/material_ball/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/material_ball/material_ball_a.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629174904"
+			},
+			{
+				"file": "data/core/textures/material_ball/material_ball_alb.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226292796344"
+			},
+			{
+				"file": "data/core/textures/material_ball/material_ball_met.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226292796344"
+			},
+			{
+				"file": "data/core/textures/material_ball/material_ball_n.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226291398256"
+			},
+			{
+				"file": "data/core/textures/mesh_indirect.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262816592"
+			},
+			{
+				"file": "data/core/textures/mesh_layer_mask.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282872"
+			},
+			{
+				"file": "data/core/textures/mesh_leaf_color.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282189"
+			},
+			{
+				"file": "data/core/textures/mesh_leaf_noise_2d.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262843832"
+			},
+			{
+				"file": "data/core/textures/mesh_leaf_noise_3d.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628149925"
+			},
+			{
+				"file": "data/core/textures/mesh_leaf_thickness.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628312"
+			},
+			{
+				"file": "data/core/textures/mesh_lut_shading.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262812416"
+			},
+			{
+				"file": "data/core/textures/mesh_noise_diffuse.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628496"
+			},
+			{
+				"file": "data/core/textures/mesh_noise_mask.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628312"
+			},
+			{
+				"file": "data/core/textures/mesh_noise_specular.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628312"
+			},
+			{
+				"file": "data/core/textures/mesh_overlap_mask.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282872"
+			},
+			{
+				"file": "data/core/textures/mesh_paint_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262832896"
+			},
+			{
+				"file": "data/core/textures/mesh_reflection.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262816592"
+			},
+			{
+				"file": "data/core/textures/no_imagery_data.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628174904"
+			},
+			{
+				"file": "data/core/textures/particles/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/particles/attenuation.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226292876"
+			},
+			{
+				"file": "data/core/textures/particles/diffuse.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226295588"
+			},
+			{
+				"file": "data/core/textures/particles/normal.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226291520"
+			},
+			{
+				"file": "data/core/textures/particles_base_attenuation.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282876"
+			},
+			{
+				"file": "data/core/textures/particles_base_diffuse.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226285588"
+			},
+			{
+				"file": "data/core/textures/particles_base_normal.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226281520"
+			},
+			{
+				"file": "data/core/textures/post_filter_reflection_vignette.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226288320"
+			},
+			{
+				"file": "data/core/textures/post_filter_wet_normal.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262887536"
+			},
+			{
+				"file": "data/core/textures/render_composite_dithering.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628384"
+			},
+			{
+				"file": "data/core/textures/render_hdr_bokeh_iris.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226284224"
+			},
+			{
+				"file": "data/core/textures/render_hdr_lens_vignette.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262832896"
+			},
+			{
+				"file": "data/core/textures/render_hdr_shaft_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226284224"
+			},
+			{
+				"file": "data/core/textures/render_occlusion_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628192"
+			},
+			{
+				"file": "data/core/textures/render_volumetric_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226284224"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_0/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_0/base.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226293145772"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_0/ground.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629196652"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_0/light_color.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629393260"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_0/mie.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629524332"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_1/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_1/base.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629196652"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_1/ground.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629196652"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_1/light_color.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629524332"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_1/mie.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629393260"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_2/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_2/base.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629196652"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_2/ground.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629196652"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_2/light_color.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629812"
+			},
+			{
+				"file": "data/core/textures/scattering_lut/preset_2/mie.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922629393260"
+			},
+			{
+				"file": "data/core/textures/sensor/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/sensor/lut_green.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226302176"
+			},
+			{
+				"file": "data/core/textures/sensor/lut_heat.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226302176"
+			},
+			{
+				"file": "data/core/textures/sensor/lut_red.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226301152"
+			},
+			{
+				"file": "data/core/textures/sensor/lut_white.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226302176"
+			},
+			{
+				"file": "data/core/textures/sky_base_background.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628196736"
+			},
+			{
+				"file": "data/core/textures/sky_base_clouds_0.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628174904"
+			},
+			{
+				"file": "data/core/textures/sky_base_clouds_1.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628174904"
+			},
+			{
+				"file": "data/core/textures/sky_base_density.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226284224"
+			},
+			{
+				"file": "data/core/textures/sky_base_mask.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628269219"
+			},
+			{
+				"file": "data/core/textures/sky_base_mask_0.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628174904"
+			},
+			{
+				"file": "data/core/textures/sky_base_mask_1.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628174904"
+			},
+			{
+				"file": "data/core/textures/sky_base_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226288320"
+			},
+			{
+				"file": "data/core/textures/sky_base_volume.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262832896"
+			},
+			{
+				"file": "data/core/textures/syncker/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/syncker/syncker_box.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263016777343"
+			},
+			{
+				"file": "data/core/textures/syncker/syncker_sphere.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263016777343"
+			},
+			{
+				"file": "data/core/textures/terrain_base_diffuse.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226281492"
+			},
+			{
+				"file": "data/core/textures/terrain_base_normal.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628496"
+			},
+			{
+				"file": "data/core/textures/terrain_base_specular.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226281151"
+			},
+			{
+				"file": "data/core/textures/volume_base_cloud_attenuation.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282876"
+			},
+			{
+				"file": "data/core/textures/volume_base_cloud_density.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262865664"
+			},
+			{
+				"file": "data/core/textures/volume_base_fog_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262832896"
+			},
+			{
+				"file": "data/core/textures/volume_base_omni_attenuation.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282189"
+			},
+			{
+				"file": "data/core/textures/volume_base_proj_attenuation.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226282876"
+			},
+			{
+				"file": "data/core/textures/volume_base_proj_diffuse.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262816511"
+			},
+			{
+				"file": "data/core/textures/volume_base_shaft_noise.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226284224"
+			},
+			{
+				"file": "data/core/textures/water_base_caps.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628174904"
+			},
+			{
+				"file": "data/core/textures/water_base_foam.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922628174904"
+			},
+			{
+				"file": "data/core/textures/water_base_normal.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262887536"
+			},
+			{
+				"file": "data/core/textures/water_base_reflection.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262816592"
+			},
+			{
+				"file": "data/core/textures/water_global/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/water_global/caustics.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263019174101"
+			},
+			{
+				"file": "data/core/textures/water_global/foam_d.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922630699192"
+			},
+			{
+				"file": "data/core/textures/water_global/height_map.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226301398144"
+			},
+			{
+				"file": "data/core/textures/water_global/shoreline_lut.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263046722"
+			},
+			{
+				"file": "data/core/textures/water_global/water_depth_lut.tga",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226306188"
+			},
+			{
+				"file": "data/core/textures/water_global/water_detail_n.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226301398256"
+			},
+			{
+				"file": "data/core/textures/water_global/water_detail_weak_n.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922630349680"
+			},
+			{
+				"file": "data/core/textures/world_light/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/core/textures/world_light/celestial_body_moon.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922630276296"
+			},
+			{
+				"file": "data/core/textures/world_light/celestial_body_sun.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226306582"
+			},
+			{
+				"file": "data/core/unigine.cpp",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226201448"
+			},
+			{
+				"file": "data/core/unigine.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226208919"
+			},
+			{
+				"file": "data/core/unigine.ui",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492262019496"
+			},
+			{
+				"file": "data/editor2/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/editor.cpp",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922631164"
+			},
+			{
+				"file": "data/editor2/editor_tracker.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311566"
+			},
+			{
+				"file": "data/editor2/editor_video_grabber.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922631809"
+			},
+			{
+				"file": "data/editor2/gui/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/gui/action_add.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311592"
+			},
+			{
+				"file": "data/editor2/gui/action_clear.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311750"
+			},
+			{
+				"file": "data/editor2/gui/action_edit.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226312379"
+			},
+			{
+				"file": "data/editor2/gui/action_empty.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922631736"
+			},
+			{
+				"file": "data/editor2/gui/action_load.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311478"
+			},
+			{
+				"file": "data/editor2/gui/action_lock.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226315388"
+			},
+			{
+				"file": "data/editor2/gui/action_ortho.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311459"
+			},
+			{
+				"file": "data/editor2/gui/action_reset.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226312769"
+			},
+			{
+				"file": "data/editor2/gui/action_run.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226316311"
+			},
+			{
+				"file": "data/editor2/gui/action_save.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311492"
+			},
+			{
+				"file": "data/editor2/gui/action_settings.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226316516"
+			},
+			{
+				"file": "data/editor2/gui/action_sub.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226313848"
+			},
+			{
+				"file": "data/editor2/gui/action_view.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226313349"
+			},
+			{
+				"file": "data/editor2/gui/brush_circle_sprite.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922631595"
+			},
+			{
+				"file": "data/editor2/gui/brush_square_sprite.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922631390"
+			},
+			{
+				"file": "data/editor2/gui/color_black.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263177"
+			},
+			{
+				"file": "data/editor2/gui/color_white.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263178"
+			},
+			{
+				"file": "data/editor2/gui/decal_mesh.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226317562"
+			},
+			{
+				"file": "data/editor2/gui/decal_omni.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226314043"
+			},
+			{
+				"file": "data/editor2/gui/decal_ortho.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226314027"
+			},
+			{
+				"file": "data/editor2/gui/decal_proj.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226314576"
+			},
+			{
+				"file": "data/editor2/gui/editor_add.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311946"
+			},
+			{
+				"file": "data/editor2/gui/editor_camera.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226314171"
+			},
+			{
+				"file": "data/editor2/gui/editor_copy.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226313442"
+			},
+			{
+				"file": "data/editor2/gui/editor_down.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311960"
+			},
+			{
+				"file": "data/editor2/gui/editor_edit.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226313759"
+			},
+			{
+				"file": "data/editor2/gui/editor_editor.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226312469"
+			},
+			{
+				"file": "data/editor2/gui/editor_empty.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311072"
+			},
+			{
+				"file": "data/editor2/gui/editor_hider.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922631288"
+			},
+			{
+				"file": "data/editor2/gui/editor_horizontal.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226312865"
+			},
+			{
+				"file": "data/editor2/gui/editor_hotkeys.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226312924"
+			},
+			{
+				"file": "data/editor2/gui/editor_knob.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226315613"
+			},
+			{
+				"file": "data/editor2/gui/editor_materials.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226325731"
+			},
+			{
+				"file": "data/editor2/gui/editor_move.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226324357"
+			},
+			{
+				"file": "data/editor2/gui/editor_new.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321413"
+			},
+			{
+				"file": "data/editor2/gui/editor_next.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321982"
+			},
+			{
+				"file": "data/editor2/gui/editor_nodes.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322376"
+			},
+			{
+				"file": "data/editor2/gui/editor_open.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321769"
+			},
+			{
+				"file": "data/editor2/gui/editor_paste.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323301"
+			},
+			{
+				"file": "data/editor2/gui/editor_physics.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226326536"
+			},
+			{
+				"file": "data/editor2/gui/editor_play.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321517"
+			},
+			{
+				"file": "data/editor2/gui/editor_prev.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322034"
+			},
+			{
+				"file": "data/editor2/gui/editor_properties.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321827"
+			},
+			{
+				"file": "data/editor2/gui/editor_quit.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322032"
+			},
+			{
+				"file": "data/editor2/gui/editor_remove.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322120"
+			},
+			{
+				"file": "data/editor2/gui/editor_render.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322263"
+			},
+			{
+				"file": "data/editor2/gui/editor_reset.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226325265"
+			},
+			{
+				"file": "data/editor2/gui/editor_run.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323684"
+			},
+			{
+				"file": "data/editor2/gui/editor_save.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321756"
+			},
+			{
+				"file": "data/editor2/gui/editor_sound.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323270"
+			},
+			{
+				"file": "data/editor2/gui/editor_tools.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226324864"
+			},
+			{
+				"file": "data/editor2/gui/editor_tracker.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226324706"
+			},
+			{
+				"file": "data/editor2/gui/editor_up.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321896"
+			},
+			{
+				"file": "data/editor2/gui/editor_validator.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322291"
+			},
+			{
+				"file": "data/editor2/gui/field_animation.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226325401"
+			},
+			{
+				"file": "data/editor2/gui/field_spacer.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321802"
+			},
+			{
+				"file": "data/editor2/gui/file_icon_bookmark.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323333"
+			},
+			{
+				"file": "data/editor2/gui/file_icon_browser_linux.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323664"
+			},
+			{
+				"file": "data/editor2/gui/file_icon_browser_mac.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323655"
+			},
+			{
+				"file": "data/editor2/gui/file_icon_browser_windows.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323839"
+			},
+			{
+				"file": "data/editor2/gui/file_icon_create_folder.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323223"
+			},
+			{
+				"file": "data/editor2/gui/helpers_add.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322969"
+			},
+			{
+				"file": "data/editor2/gui/helpers_tree.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322849"
+			},
+			{
+				"file": "data/editor2/gui/light_environment_probe.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226329069"
+			},
+			{
+				"file": "data/editor2/gui/light_omni.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226326554"
+			},
+			{
+				"file": "data/editor2/gui/light_proj.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323966"
+			},
+			{
+				"file": "data/editor2/gui/light_world.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226325449"
+			},
+			{
+				"file": "data/editor2/gui/manipulator_rotator.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226326925"
+			},
+			{
+				"file": "data/editor2/gui/manipulator_scaler.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323901"
+			},
+			{
+				"file": "data/editor2/gui/manipulator_selector.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226324753"
+			},
+			{
+				"file": "data/editor2/gui/manipulator_translator.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226325555"
+			},
+			{
+				"file": "data/editor2/gui/materials_assign.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323468"
+			},
+			{
+				"file": "data/editor2/gui/materials_clone.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322823"
+			},
+			{
+				"file": "data/editor2/gui/materials_inherit.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226324016"
+			},
+			{
+				"file": "data/editor2/gui/materials_libraries.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322522"
+			},
+			{
+				"file": "data/editor2/gui/materials_move.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226325680"
+			},
+			{
+				"file": "data/editor2/gui/materials_remove.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323737"
+			},
+			{
+				"file": "data/editor2/gui/materials_reparent.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226327133"
+			},
+			{
+				"file": "data/editor2/gui/menu_checkbox.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321316"
+			},
+			{
+				"file": "data/editor2/gui/menu_icons.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226324513"
+			},
+			{
+				"file": "data/editor2/gui/navigation_mesh.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322150"
+			},
+			{
+				"file": "data/editor2/gui/navigation_sector.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226321799"
+			},
+			{
+				"file": "data/editor2/gui/node_dummy.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226331654"
+			},
+			{
+				"file": "data/editor2/gui/node_extern.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226331654"
+			},
+			{
+				"file": "data/editor2/gui/node_layer.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332413"
+			},
+			{
+				"file": "data/editor2/gui/node_pivot.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335220"
+			},
+			{
+				"file": "data/editor2/gui/node_reference.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333976"
+			},
+			{
+				"file": "data/editor2/gui/node_trigger.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226331490"
+			},
+			{
+				"file": "data/editor2/gui/nodes_clone.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323724"
+			},
+			{
+				"file": "data/editor2/gui/nodes_down.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323772"
+			},
+			{
+				"file": "data/editor2/gui/nodes_export.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323528"
+			},
+			{
+				"file": "data/editor2/gui/nodes_fold.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322657"
+			},
+			{
+				"file": "data/editor2/gui/nodes_icons_big.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263279482"
+			},
+			{
+				"file": "data/editor2/gui/nodes_load.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323126"
+			},
+			{
+				"file": "data/editor2/gui/nodes_new.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226322278"
+			},
+			{
+				"file": "data/editor2/gui/nodes_remove.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323894"
+			},
+			{
+				"file": "data/editor2/gui/nodes_save.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226323532"
+			},
+			{
+				"file": "data/editor2/gui/nodes_up.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333707"
+			},
+			{
+				"file": "data/editor2/gui/object_billboard.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332697"
+			},
+			{
+				"file": "data/editor2/gui/object_billboards.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332904"
+			},
+			{
+				"file": "data/editor2/gui/object_dummy.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332448"
+			},
+			{
+				"file": "data/editor2/gui/object_dynamic.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333552"
+			},
+			{
+				"file": "data/editor2/gui/object_extern.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332448"
+			},
+			{
+				"file": "data/editor2/gui/object_grass.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334577"
+			},
+			{
+				"file": "data/editor2/gui/object_gui.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332033"
+			},
+			{
+				"file": "data/editor2/gui/object_mesh.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226331788"
+			},
+			{
+				"file": "data/editor2/gui/object_mesh_cluster.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332773"
+			},
+			{
+				"file": "data/editor2/gui/object_mesh_clutter.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335372"
+			},
+			{
+				"file": "data/editor2/gui/object_mesh_dynamic.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332356"
+			},
+			{
+				"file": "data/editor2/gui/object_particles.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226337910"
+			},
+			{
+				"file": "data/editor2/gui/object_sky.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334044"
+			},
+			{
+				"file": "data/editor2/gui/object_terrain.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333867"
+			},
+			{
+				"file": "data/editor2/gui/object_volume.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334366"
+			},
+			{
+				"file": "data/editor2/gui/object_water.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333333"
+			},
+			{
+				"file": "data/editor2/gui/obstacle_box.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332042"
+			},
+			{
+				"file": "data/editor2/gui/obstacle_capsule.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226336055"
+			},
+			{
+				"file": "data/editor2/gui/obstacle_sphere.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335711"
+			},
+			{
+				"file": "data/editor2/gui/panel_axis_x.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334699"
+			},
+			{
+				"file": "data/editor2/gui/panel_axis_y.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334369"
+			},
+			{
+				"file": "data/editor2/gui/panel_axis_z.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334418"
+			},
+			{
+				"file": "data/editor2/gui/panel_drop_down.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334998"
+			},
+			{
+				"file": "data/editor2/gui/panel_effect.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332708"
+			},
+			{
+				"file": "data/editor2/gui/panel_make_external.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334742"
+			},
+			{
+				"file": "data/editor2/gui/panel_make_internal.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334437"
+			},
+			{
+				"file": "data/editor2/gui/panel_move_horizontal.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332995"
+			},
+			{
+				"file": "data/editor2/gui/panel_move_vertical.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332975"
+			},
+			{
+				"file": "data/editor2/gui/panel_path.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333020"
+			},
+			{
+				"file": "data/editor2/gui/panel_snap_angle.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226336684"
+			},
+			{
+				"file": "data/editor2/gui/panel_snap_grid.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226336048"
+			},
+			{
+				"file": "data/editor2/gui/panel_snap_surface.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226336747"
+			},
+			{
+				"file": "data/editor2/gui/physical_force.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333473"
+			},
+			{
+				"file": "data/editor2/gui/physical_noise.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335597"
+			},
+			{
+				"file": "data/editor2/gui/physical_trigger.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335532"
+			},
+			{
+				"file": "data/editor2/gui/physical_water.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335564"
+			},
+			{
+				"file": "data/editor2/gui/physical_wind.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335597"
+			},
+			{
+				"file": "data/editor2/gui/player_dummy.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333941"
+			},
+			{
+				"file": "data/editor2/gui/player_persecutor.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333941"
+			},
+			{
+				"file": "data/editor2/gui/preview_na_128.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226335494"
+			},
+			{
+				"file": "data/editor2/gui/preview_na_16.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333130"
+			},
+			{
+				"file": "data/editor2/gui/preview_na_24.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333238"
+			},
+			{
+				"file": "data/editor2/gui/preview_na_256.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226338562"
+			},
+			{
+				"file": "data/editor2/gui/preview_na_32.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333380"
+			},
+			{
+				"file": "data/editor2/gui/preview_na_48.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226333716"
+			},
+			{
+				"file": "data/editor2/gui/preview_na_64.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334112"
+			},
+			{
+				"file": "data/editor2/gui/properties_assign.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332218"
+			},
+			{
+				"file": "data/editor2/gui/properties_clone.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226331625"
+			},
+			{
+				"file": "data/editor2/gui/properties_inherit.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332414"
+			},
+			{
+				"file": "data/editor2/gui/properties_libraries.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226332522"
+			},
+			{
+				"file": "data/editor2/gui/properties_move.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226334632"
+			},
+			{
+				"file": "data/editor2/gui/properties_remove.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342895"
+			},
+			{
+				"file": "data/editor2/gui/sound_reverb.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226345457"
+			},
+			{
+				"file": "data/editor2/gui/sound_source.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226344373"
+			},
+			{
+				"file": "data/editor2/gui/terrain_diffuse_brush.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226347872"
+			},
+			{
+				"file": "data/editor2/gui/terrain_diffuse_brush_color.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226344157"
+			},
+			{
+				"file": "data/editor2/gui/terrain_diffuse_mask_brush.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226348133"
+			},
+			{
+				"file": "data/editor2/gui/terrain_heights.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634159"
+			},
+			{
+				"file": "data/editor2/gui/terrain_heights_brush.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226345793"
+			},
+			{
+				"file": "data/editor2/gui/terrain_holes.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634368"
+			},
+			{
+				"file": "data/editor2/gui/terrain_holes_brush.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226345390"
+			},
+			{
+				"file": "data/editor2/gui/terrain_mask.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634294"
+			},
+			{
+				"file": "data/editor2/gui/terrain_mask_brush.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226343579"
+			},
+			{
+				"file": "data/editor2/gui/terrain_white.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263482"
+			},
+			{
+				"file": "data/editor2/gui/world_cluster.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342440"
+			},
+			{
+				"file": "data/editor2/gui/world_clutter.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226345372"
+			},
+			{
+				"file": "data/editor2/gui/world_expression.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342030"
+			},
+			{
+				"file": "data/editor2/gui/world_extern.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226341654"
+			},
+			{
+				"file": "data/editor2/gui/world_layer.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342413"
+			},
+			{
+				"file": "data/editor2/gui/world_occluder.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226343443"
+			},
+			{
+				"file": "data/editor2/gui/world_portal.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342589"
+			},
+			{
+				"file": "data/editor2/gui/world_sector.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226343917"
+			},
+			{
+				"file": "data/editor2/gui/world_switcher.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226341490"
+			},
+			{
+				"file": "data/editor2/gui/world_transform.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342873"
+			},
+			{
+				"file": "data/editor2/gui/world_trigger.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226348381"
+			},
+			{
+				"file": "data/editor2/materials/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/materials/brushes/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/materials/brushes/brush_blur_post.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634342"
+			},
+			{
+				"file": "data/editor2/materials/brushes/brush_draw_post.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634341"
+			},
+			{
+				"file": "data/editor2/materials/impostor_grabber/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/materials/impostor_grabber/impostor_grab_texture_post.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634531"
+			},
+			{
+				"file": "data/editor2/materials/landscape/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/materials/landscape/fetch_buffers_post_editor2.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634205"
+			},
+			{
+				"file": "data/editor2/materials/terrain/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/materials/terrain/terrain_blend_by_mask_post.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634215"
+			},
+			{
+				"file": "data/editor2/materials/terrain/terrain_blend_masks_post.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634211"
+			},
+			{
+				"file": "data/editor2/materials/terrain/terrain_cut_area_post.basemat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634205"
+			},
+			{
+				"file": "data/editor2/meshes/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/meshes/material_preview.mesh",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634131693"
+			},
+			{
+				"file": "data/editor2/resources/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/resources/materials/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/resources/materials/ground_grid.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634553"
+			},
+			{
+				"file": "data/editor2/resources/materials/ground_grid.mat.asset",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634341"
+			},
+			{
+				"file": "data/editor2/resources/materials/material_ball.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634696"
+			},
+			{
+				"file": "data/editor2/resources/materials/material_ball.mat.asset",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634343"
+			},
+			{
+				"file": "data/editor2/resources/meshes/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/resources/meshes/viewcube.mesh",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226347497"
+			},
+			{
+				"file": "data/editor2/resources/meshes/viewcube_arrows.mesh",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342031"
+			},
+			{
+				"file": "data/editor2/resources/nodes/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/resources/nodes/decal_mesh.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634238"
+			},
+			{
+				"file": "data/editor2/resources/nodes/decal_ortho.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634302"
+			},
+			{
+				"file": "data/editor2/resources/nodes/decal_proj.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634298"
+			},
+			{
+				"file": "data/editor2/resources/nodes/field_animation.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634193"
+			},
+			{
+				"file": "data/editor2/resources/nodes/field_height.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634167"
+			},
+			{
+				"file": "data/editor2/resources/nodes/field_shoreline.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634170"
+			},
+			{
+				"file": "data/editor2/resources/nodes/field_spacer.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634190"
+			},
+			{
+				"file": "data/editor2/resources/nodes/field_weather.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634168"
+			},
+			{
+				"file": "data/editor2/resources/nodes/light_environment_probe.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226341620"
+			},
+			{
+				"file": "data/editor2/resources/nodes/light_omni.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226346900"
+			},
+			{
+				"file": "data/editor2/resources/nodes/light_proj.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226346937"
+			},
+			{
+				"file": "data/editor2/resources/nodes/light_voxel_probe.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226342068"
+			},
+			{
+				"file": "data/editor2/resources/nodes/light_world.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226346906"
+			},
+			{
+				"file": "data/editor2/resources/nodes/navigation_mesh.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634591"
+			},
+			{
+				"file": "data/editor2/resources/nodes/navigation_sector.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634193"
+			},
+			{
+				"file": "data/editor2/resources/nodes/node_dummy.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634165"
+			},
+			{
+				"file": "data/editor2/resources/nodes/node_pivot.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634165"
+			},
+			{
+				"file": "data/editor2/resources/nodes/node_trigger.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634167"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_billboards.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634744"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_cloud_layer.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634272"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_dummy.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922634167"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_grass.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351100"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_gui.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635684"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_gui_mesh.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635373"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_mesh_cluster.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635332"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_mesh_clutter.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635706"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_particles.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635587"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_sky.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351046"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_sky_materials/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_sky_materials/default_object_sky_shadow.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635298"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_sky_materials/default_object_sky_sphere.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635318"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_sky_materials/default_object_sky_volume.mat",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635365"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_terrain_global.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635397"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_text.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635358"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_volume_box.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635339"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_volume_omni.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635408"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_volume_proj.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635442"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_volume_sphere.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635346"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_water_global.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635324"
+			},
+			{
+				"file": "data/editor2/resources/nodes/object_water_mesh.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226352049"
+			},
+			{
+				"file": "data/editor2/resources/nodes/obstacle_box.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635188"
+			},
+			{
+				"file": "data/editor2/resources/nodes/obstacle_capsule.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635213"
+			},
+			{
+				"file": "data/editor2/resources/nodes/obstacle_sphere.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635191"
+			},
+			{
+				"file": "data/editor2/resources/nodes/physical_force.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635169"
+			},
+			{
+				"file": "data/editor2/resources/nodes/physical_noise.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635169"
+			},
+			{
+				"file": "data/editor2/resources/nodes/physical_trigger.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635246"
+			},
+			{
+				"file": "data/editor2/resources/nodes/physical_water.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635169"
+			},
+			{
+				"file": "data/editor2/resources/nodes/physical_wind.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635168"
+			},
+			{
+				"file": "data/editor2/resources/nodes/player_actor.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635211"
+			},
+			{
+				"file": "data/editor2/resources/nodes/player_dummy.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635209"
+			},
+			{
+				"file": "data/editor2/resources/nodes/player_persecutor.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635545"
+			},
+			{
+				"file": "data/editor2/resources/nodes/player_spectator.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635215"
+			},
+			{
+				"file": "data/editor2/resources/nodes/sound_reverb.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635167"
+			},
+			{
+				"file": "data/editor2/resources/nodes/sound_source.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635401"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_cluster.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635873"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_clutter.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635686"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_expression.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635171"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_occluder.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635196"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_occluder_mesh.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635425"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_occluder_terrain.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635201"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_portal.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635167"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_sector.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635167"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_switcher.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635169"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_transform_bone.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635174"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_transform_path.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635227"
+			},
+			{
+				"file": "data/editor2/resources/nodes/world_trigger.node",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635168"
+			},
+			{
+				"file": "data/editor2/resources/template.cpp",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226341442"
+			},
+			{
+				"file": "data/editor2/resources/template.world",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263434802"
+			},
+			{
+				"file": "data/editor2/resources/textures/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/resources/textures/persp_orto.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263522242"
+			},
+			{
+				"file": "data/editor2/resources/textures/viewcube_touch_d.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263566190"
+			},
+			{
+				"file": "data/editor2/resources/textures/viewcube_untouch_d.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263560402"
+			},
+			{
+				"file": "data/editor2/shaders/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/shaders/brush_blur_post.frag",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226352107"
+			},
+			{
+				"file": "data/editor2/shaders/brush_draw_post.frag",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351924"
+			},
+			{
+				"file": "data/editor2/shaders/brush_project_post.vert",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351262"
+			},
+			{
+				"file": "data/editor2/shaders/fetch_buffers_post.frag",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351826"
+			},
+			{
+				"file": "data/editor2/shaders/impostor_grab_post.frag",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226352363"
+			},
+			{
+				"file": "data/editor2/shaders/terrain_blend_by_mask_post.frag",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351084"
+			},
+			{
+				"file": "data/editor2/shaders/terrain_blend_masks_post.frag",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635999"
+			},
+			{
+				"file": "data/editor2/shaders/terrain_cut_area_post.frag",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "1534922635966"
+			},
+			{
+				"file": "data/editor2/textures/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/editor2/textures/brush_circle.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351881"
+			},
+			{
+				"file": "data/editor2/textures/brush_square.png",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226351347"
+			},
+			{
+				"file": "data/editor2/textures/editor_environment.dds",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226364194416"
+			},
+			{
+				"file": "data/guids.db",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1534922636102616"
+			},
+			{
+				"file": "data/materials/",
+				"tags": [
+					"project_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/materials/ground_grid.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1534922636553"
+			},
+			{
+				"file": "data/materials/ground_grid.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1534922636253"
+			},
+			{
+				"file": "data/materials/material_ball.mat",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1534922636696"
+			},
+			{
+				"file": "data/materials/material_ball.mat.meta",
+				"tags": [
+					"project_data"
+				],
+				"hash": "1534922636255"
+			},
+			{
+				"file": "data/scripts/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/scripts/common/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/scripts/common/dialogs.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226309675"
+			},
+			{
+				"file": "data/scripts/common/event.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226309279"
+			},
+			{
+				"file": "data/scripts/common/factory.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226302370"
+			},
+			{
+				"file": "data/scripts/common/parameter.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226303630"
+			},
+			{
+				"file": "data/scripts/common/serializer.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226306223"
+			},
+			{
+				"file": "data/scripts/input/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/scripts/input/action.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226309074"
+			},
+			{
+				"file": "data/scripts/input/control.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226305471"
+			},
+			{
+				"file": "data/scripts/input/control_setup_window.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226308084"
+			},
+			{
+				"file": "data/scripts/input/control_setup_window.ui",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226301274"
+			},
+			{
+				"file": "data/scripts/input/input.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263010987"
+			},
+			{
+				"file": "data/scripts/input/input_device.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "153492263016014"
+			},
+			{
+				"file": "data/scripts/input/input_dialog.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226315152"
+			},
+			{
+				"file": "data/scripts/utils/",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": ""
+			},
+			{
+				"file": "data/scripts/utils/circular_buffer.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226312682"
+			},
+			{
+				"file": "data/scripts/utils/colors.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311436"
+			},
+			{
+				"file": "data/scripts/utils/property_utils.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226316603"
+			},
+			{
+				"file": "data/scripts/utils/random.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311819"
+			},
+			{
+				"file": "data/scripts/utils/xml_utils.h",
+				"tags": [
+					"unigine_data"
+				],
+				"hash": "15349226311214"
+			},
+			{
+				"file": "data/shader_d3d11.cache",
+				"tags": [
+					"project_data"
+				],
+				"hash": "15349226366090540"
+			},
+			{
+				"file": "data/shader_gl.cache",
+				"tags": [
+					"project_data"
+				],
+				"hash": "153492263652128428"
+			},
+			{
+				"file": "launch_debug.bat",
+				"tags": [
+					"launcher_console"
+				],
+				"hash": "1534922637415"
+			},
+			{
+				"file": "launch_editor.bat",
+				"tags": [
+					"launcher_console"
+				],
+				"hash": "1534922637507"
+			},
+			{
+				"file": "launch_release.bat",
+				"tags": [
+					"launcher_console"
+				],
+				"hash": "1534922637412"
+			},
+			{
+				"file": "source/",
+				"tags": [
+					"project_sources"
+				],
+				"hash": ""
+			},
+			{
+				"file": "source/AppEditorLogic.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226362072"
+			},
+			{
+				"file": "source/AppEditorLogic.h",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226361069"
+			},
+			{
+				"file": "source/AppQt/",
+				"tags": [
+					"project_sources"
+				],
+				"hash": ""
+			},
+			{
+				"file": "source/AppQt/AppQt.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "153492263622131"
+			},
+			{
+				"file": "source/AppQt/AppQt.h",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226364754"
+			},
+			{
+				"file": "source/AppQt/D3D11AppQt.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1534922636893"
+			},
+			{
+				"file": "source/AppQt/D3D11AppQt.h",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1534922636967"
+			},
+			{
+				"file": "source/AppQt/GLAppQt.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226361085"
+			},
+			{
+				"file": "source/AppQt/GLAppQt.h",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1534922636963"
+			},
+			{
+				"file": "source/AppSystemLogic.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226361618"
+			},
+			{
+				"file": "source/AppSystemLogic.h",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1534922636981"
+			},
+			{
+				"file": "source/AppWorldLogic.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226362851"
+			},
+			{
+				"file": "source/AppWorldLogic.h",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226361140"
+			},
+			{
+				"file": "source/FirstQt.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226362345"
+			},
+			{
+				"file": "source/FirstQt.pro",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "15349226371218"
+			},
+			{
+				"file": "source/MainWindow.cpp",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1534922636823"
+			},
+			{
+				"file": "source/MainWindow.h",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1534922636903"
+			},
+			{
+				"file": "source/MainWindow.ui",
+				"tags": [
+					"project_sources"
+				],
+				"hash": "1534922636486"
+			}
+		]
+	},
+	"sdk": {
+		"key": "simevaluation2.7.1windows",
+		"internal_id": "tier3_evaluation_windows",
+		"products": [
+			"tier3_evaluation"
+		],
+		"edition": "sim",
+		"version": "2.7.1",
+		"internal_version": "37",
+		"base_version": "",
+		"timestamp": "201806041844",
+		"type": "evaluation",
+		"os": "windows",
+		"path": "D:/Work/UNIGINE_Evaluation_Sim_Windows_2.7.1/sdks/evaluation_sim_windows_2.7.1/",
+		"name": "UNIGINE 2 Sim Evaluation Kit",
+		"resource": "sdk",
+		"size": "0",
+		"uncompressed_size": "0",
+		"activation_types": [
+		]
+	}
+}

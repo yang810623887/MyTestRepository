@@ -1,0 +1,30 @@
+<base_material version="2.0" name="post_sensor_calculate" hidden="1">
+	
+	<!-- shaders -->
+	<shader pass="post"
+		vertex="core/shaders/screen_space/vertex/sensor.vert"
+		fragment="core/shaders/screen_space/fragment/sensor.frag"/>
+	
+	<!-- textures -->
+	<texture unit="0" name="color" type="procedural"/>
+	<texture unit="1" type="auxiliary"/>
+	<texture unit="2" type="ssao"/>
+	<texture unit="3" name="heatlookup" filter="linear" wrap="clamp" title="Vision LUT" group="Base" tooltip="Look up texture for sensor">core/textures/sensor/lut_white.dds</texture> 
+	<texture unit="4" type="opacity_depth"/>
+	
+	<!-- parameters -->
+	<parameter name="ambient_heat_occlusion" type="slider" min="-1.0" max="1.0" flags="max_expand">-0.1</parameter>
+	<parameter name="influence_scene_pow" type="slider" min="0.0" max="10.0" flags="max_expand">2.0</parameter>
+	<parameter name="influence_scene_scale" type="slider" min="0.0" max="10.0" flags="max_expand">1.0</parameter>
+	<parameter name="global_temperature" type="slider" min="-1.0" max="1.0" flags="max_expand">0.0</parameter>
+	<parameter name="sensor_blur_scale" type="slider" min="0.0" max="10.0" flags="max_expand">2.0</parameter>
+	<parameter name="sensor_blur_detail" type="slider" min="0.0" max="1.0" flags="max_expand">0.5</parameter>
+	<parameter name="motion_blur_factor" type="slider" min="0.0" max="1000.0" flags="max_expand">100.0</parameter>
+	<parameter name="noise_level" type="slider" min="0.0" max="1.0" flags="max_expand">0.025</parameter>
+	<parameter name="noise_size" type="slider" min="0.0" max="2000.0" flags="max_expand">400.0</parameter>
+	<parameter name="global_aux_pow" type="slider" min="0.0" max="10.0" flags="max_expand">1.0</parameter>
+	<parameter name="global_aux_scale" type="slider" min="0.0" max="10.0" flags="max_expand">1.0</parameter>
+	<parameter name="sensor_temperature_map_shift" type="slider" min="-1.0" max="1.0" flags="max_expand">0.0</parameter>
+	<parameter name="sensor_temperature_map_scale" type="slider" min="0.0" max="10.0" flags="max_expand">1.0</parameter>
+	
+</base_material>

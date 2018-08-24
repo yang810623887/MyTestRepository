@@ -1,0 +1,10 @@
+<base_material version="2.0" name="render_exposure" hidden="1">
+	
+	<!-- shaders -->
+	<shader pass="post"
+		fragment="core/shaders/screen_space/exposure/fragment/exposure.frag"/>
+	
+	<!-- textures -->
+	<texture name="luminance" type="procedural"/>
+	
+</base_material>

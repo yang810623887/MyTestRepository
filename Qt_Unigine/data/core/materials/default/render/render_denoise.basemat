@@ -1,0 +1,6 @@
+<base_material version="2.0" name="render_denoise" hidden="1">
+	<shader pass="post"
+		fragment="core/shaders/screen_space/fragment/denoise.frag"/>
+	
+	<texture name="color" type="procedural"/>
+</base_material>

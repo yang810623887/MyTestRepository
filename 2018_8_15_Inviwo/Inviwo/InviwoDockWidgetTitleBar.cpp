@@ -73,7 +73,7 @@ namespace inviwo {
 	void InviwoDockWidgetTitleBar::setLabel(const QString &str) { label_->setText(str); }
 
 	void InviwoDockWidgetTitleBar::stickyBtnToggled(bool toggle) {
-		//util::KeepTrueWhileInScope guard(&internalStickyFlagUpdate_);
+		util::KeepTrueWhileInScope guard(&internalStickyFlagUpdate_);
 		if (toggle) {
 			// docking allowed, restore docking areas
 			parent_->setAllowedAreas(allowedDockAreas_);
@@ -108,7 +108,7 @@ namespace inviwo {
 			allowedDockAreas_ = areas;
 			if (!isSticky()) {
 				// dockwidget is non-sticky, reset allowed areas to none
-				//util::KeepTrueWhileInScope guard(&internalStickyFlagUpdate_);
+				util::KeepTrueWhileInScope guard(&internalStickyFlagUpdate_);
 				parent_->setAllowedAreas(Qt::NoDockWidgetArea);
 			}
 		}

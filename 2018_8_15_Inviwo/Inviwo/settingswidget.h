@@ -11,6 +11,7 @@
 
 namespace inviwo {
 
+class PropertyWidgetQt;
 class settingswidget : public InviwoDockWidget
 {
 	Q_OBJECT
@@ -24,7 +25,7 @@ public:
 	virtual void saveSettings();
 
 public slots:
-//	void updatePropertyWidgetSemantics(PropertyWidgetQt*);
+	void updatePropertyWidgetSemantics(PropertyWidgetQt*);
 	virtual void closeEvent(QCloseEvent *event) override;
 
 protected:

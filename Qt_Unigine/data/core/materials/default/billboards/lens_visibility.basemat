@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base_material version="2.0" name="lens_visibility">
+	
+	<shader pass="ambient"
+		vertex="core/shaders/billboards/vertex/lens_visibility.vert"
+		fragment="core/shaders/billboards/fragment/lens_visibility.frag"/>
+	
+</base_material>

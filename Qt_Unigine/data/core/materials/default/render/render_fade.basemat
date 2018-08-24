@@ -1,0 +1,10 @@
+<base_material version="2.0" name="render_fade" hidden="1">
+	
+	<!-- shaders -->
+	<shader pass="post"
+		vertex="core/shaders/screen_space/vertex/fade.vert"
+		fragment="core/shaders/screen_space/fragment/fade.frag"/>
+	
+	<!-- parameters -->
+	<parameter name="color" type="constant" >1.0 1.0 1.0 1.0</parameter>
+</base_material>

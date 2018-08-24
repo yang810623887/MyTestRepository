@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<material version="2.7.1.0" base_material="sky_base" name="default_object_sky_shadow" guid="e81b3b747082995017c76997c81fa1dd09292104" editable="0">
+	<blend src="zero" dest="src_alpha"/>
+	<options transparent="2"/>
+	<state name="surface">2</state>
+</material>

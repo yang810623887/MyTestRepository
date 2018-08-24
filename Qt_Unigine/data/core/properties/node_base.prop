@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright (C) 2005-2018, UNIGINE Corp. All rights reserved.
+ *
+ * This file is a part of the UNIGINE 2.7.1 SDK.
+ *
+ * Your use and / or redistribution of this software in source and / or
+ * binary form, with or without modification, is subject to: (i) your
+ * ongoing acceptance of and compliance with the terms and conditions of
+ * the UNIGINE License Agreement; and (ii) your inclusion of this notice
+ * in any version of this software that you use or redistribute.
+ * A copy of the UNIGINE License Agreement is available by contacting
+ * UNIGINE Corp. at http://unigine.com/
+ */
+
+-->
+
+<!--
+/**************************************************************************\
+ *
+ * Node base property
+ *
+\**************************************************************************/
+-->
+
+<property version="2.7.0.0" name="node_base" editable="0" manual="1">
+	
+</property>
