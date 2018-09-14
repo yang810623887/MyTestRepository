@@ -1,6 +1,7 @@
 #ifndef IVW_SETTINGSWIDGET_H
 #define IVW_SETTINGSWIDGET_H
 
+#include "inviwoqteditordefine.h"
 #include "InviwoDockWidget.h"
 #include "InviwoMainWindow.h"
 
@@ -8,11 +9,12 @@
 #include <QTabWidget>
 #include <QScrollArea>
 #include <QString>
-#include "inviwoqteditordefine.h"
+
 
 namespace inviwo {
 
 class PropertyWidgetQt;
+
 class IVW_QTEDITOR_API settingswidget : public InviwoDockWidget
 {
 	Q_OBJECT

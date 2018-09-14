@@ -1,8 +1,10 @@
 #include "inviwoapplicationqt.h"
 namespace inviwo {
 
-	InviwoApplicationQt::InviwoApplicationQt(int &argc, char** argv)
+	InviwoApplicationQt::InviwoApplicationQt(std::string displayName, int &argc, char** argv)
 		: QApplication(argc, argv)
+		, InviwoApplication(argc, argv, displayName)
+		, mainWindow_(nullptr)
 	{
 
 	}

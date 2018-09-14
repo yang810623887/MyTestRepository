@@ -1,4 +1,12 @@
 #include "settingswidget.h"
+#include "../Inviwo_module_qtwidgets/properties/propertywidgetqt.h"
+#include "../inviwo-core/inviwoapplication.h"
+#include "../Inviwo_module_qtwidgets/properties/collapsiblegroupboxwidgetqt.h"
+#include "../inviwo-core/util/settings/settings.h"
+
+
+#include <QLayout>
+#include <QFrame>
 
 namespace inviwo {
 
@@ -19,7 +27,7 @@ namespace inviwo {
 		mainWidget_ = new QWidget();
 		layout_ = new QVBoxLayout(mainWidget_);
 		layout_->setAlignment(Qt::AlignTop);
-		//layout_->setContentsMargins(0, PropertyWidgetQt::spacing, 0, PropertyWidgetQt::spacing);
+		layout_->setContentsMargins(0, PropertyWidgetQt::spacing, 0, PropertyWidgetQt::spacing);
 		layout_->setContentsMargins(0, 1, 0, 1);
 		layout_->setSpacing(7);
 		scrollArea_->setWidget(mainWidget_);
@@ -33,7 +41,34 @@ namespace inviwo {
 
 	void inviwo::settingswidget::updateSettingsWidget()
 	{
-		//auto settings = mainwindow_->getInviwoApplication()->getModuleSettings();
+		auto settings = mainwindow_->getInviwoApplication()->getModuleSettings();
+
+		for (auto &setting : settings)
+		{
+			CollapsibleGroupBoxWidgetQt* settingsGroup =
+				new CollapsibleGroupBoxWidgetQt(setting->getIdentifier());
+			settingsGroup->setParentPropertyWidget(nullptr, this);
+			layout_->addWidget(settingsGroup);
+			settingsGroup->initState();
+
+			std::vector<Property*> props = setting->getProperties();
+
+			for (auto& prop : props)
+			{
+				settingsGroup->addProperty(prop);
+				for (auto p : prop->getWidgets())
+				{
+					connect(static_cast<PropertyWidgetQt*>(p),
+						SIGNAL(updateSemantics(PropertyWidgetQt*)), this,
+						SLOT(updatePropertyWidgetSemantics(PropertyWidgetQt*)));
+				}
+			}
+			if (!settingsGroup->isCollapsed())
+			{
+				settingsGroup->toggleCollapsed();
+			}
+		}
+		layout_->addStretch();
 	}
 
 	void inviwo::settingswidget::saveSettings()

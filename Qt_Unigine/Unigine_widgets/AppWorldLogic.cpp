@@ -35,7 +35,7 @@ int AppWorldLogic::init() {
 	Game::get()->setPlayer(player->getPlayer());
 
 	// create light
-	//light = LightWorld::create(vec4::WHITE);
+	light = LightWorld::create(vec4::WHITE);
 	light_0 = LightOmni::create(vec4(1.0f, 0.0f, 0.0f, 1.0f), 100.0f, "");
 	light_1 = LightOmni::create(vec4(0.0f, 1.0f, 0.0f, 1.0f), 100.0f, "");
 	light_2 = LightOmni::create(vec4(0.0f, 0.0f, 1.0f, 1.0f), 100.0f, "");

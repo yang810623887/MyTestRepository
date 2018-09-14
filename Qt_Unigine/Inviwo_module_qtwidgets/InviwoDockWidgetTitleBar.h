@@ -4,7 +4,7 @@
 #include <QWidget>
 
 #include "qtwidgetsmoduledefine.h"
-#include "raiiutils.h"
+#include "util/raiiutils.h"
 
 class QPaintEvent;
 class QDockWidget;

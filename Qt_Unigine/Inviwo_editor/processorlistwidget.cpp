@@ -1,5 +1,7 @@
 #include "processorlistwidget.h"
 #include "processorpreview.h"
+#include "../inviwo-core/inviwomodule.h"
+#include "../inviwo-core/inviwoapplication.h"
 #include <QApplication>
 #include <QLayout>
 #include <QLabel>
@@ -128,6 +130,8 @@ namespace inviwo {
 		listView_->addItem("Module");
 		listView_->setCurrentIndex(1);
 		connect(listView_, SIGNAL(currentIndexChanged(int)), this, SLOT(addProcessorsToTree()));
+
+
 		listView_->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
 		listViewLayout->addWidget(listView_);
 		vLayout->addLayout(listViewLayout);
@@ -167,7 +171,176 @@ namespace inviwo {
 	{
 		processorTree_->clear();
 
-//		InviwoApplication *inviwoApp = InviwoApplication::getPtr();
+		InviwoApplication *inviwoApp = InviwoApplication::getPtr();
+
+		if (listView_->currentIndex() == 2)
+		{
+			addToplevelItemTo("Stable Processors", "");
+			addToplevelItemTo("Experimental Processors", "");
+			addToplevelItemTo("Broken Processors", "");
+		}
+
+		for (auto &elem : inviwoApp->getModules())
+		{
+			std::vector<ProcessorFactoryObject*> curProcessorList = elem->getProcessors();
+
+			QList<QTreeWidgetItem*> items;
+			for (auto &processor : curProcessorList)
+			{
+				if (lineEdit_->text().isEmpty() || processorFits(processor, lineEdit_->text()))
+				{
+					std::string categoryName;
+					std::string categoryDesc;
+
+					switch (listView_->currentIndex())
+					{
+					case 0:
+						categoryName = processor->getDisplayName().substr(0, 1);
+						categoryDesc = "";
+						break;
+					case 1:  // By Category
+						categoryName = processor->getCategory();
+						categoryDesc = "";
+						break;
+					//case 2:  // By Code State
+					//	categoryName = Processor::getCodeStateString(processor->getCodeState());
+					//	categoryDesc = "";
+					//	break;
+					case 3:  // By Module
+						categoryName = elem->getIdentifier();
+						categoryDesc = elem->getDescription();
+						break;
+					default:
+						categoryName = "Unkonwn";
+						categoryDesc = "";
+					}
+					QString category = QString::fromStdString(categoryName);
+					items = processorTree_->findItems(category, Qt::MatchFixedString, 0);
+
+					if (items.empty()) items.push_back(addToplevelItemTo(category, categoryDesc));
+					addProcessorItemTo(items[0], processor, elem->getIdentifier());
+				}
+			}
+		}
+
+		// Apply sorting
+		switch (listView_->currentIndex())
+		{
+		case 2:
+		{
+			int i = 0;
+			while (i < processorTree_->topLevelItemCount())
+			{
+				QTreeWidgetItem* item = processorTree_->topLevelItem(i);
+				if (item->childCount() == 0)
+				{
+					delete processorTree_->takeTopLevelItem(i);
+				}
+				else
+				{
+					item->sortChildren(0, Qt::AscendingOrder);
+					i++;
+				}
+			}
+			break;
+		}
+		default:
+			processorTree_->sortItems(0, Qt::AscendingOrder);
+			break;
+		}
+		
+		processorTree_->expandAll();
+		processorTree_->resizeColumnToContents(1);
+	}
+
+	bool ProcessorTreeWidget::processorFits(ProcessorFactoryObject* processor, const QString& filter)
+	{
+		return(
+			QString::fromStdString(processor->getDisplayName()).contains(filter, Qt::CaseInsensitive) ||
+			QString::fromStdString(processor->getClassIdentifier()).contains(filter, Qt::CaseInsensitive) ||
+			QString::fromStdString(processor->getTags().getString()).contains(filter, Qt::CaseInsensitive)
+			);
+	}
+
+	const QIcon* ProcessorTreeWidget::getCodeStateIcon(CodeState state) const
+	{
+		switch (state)
+		{
+		case CodeState::Stable:
+			return &iconStable_;
+
+		case CodeState::Broken:
+			return &iconBroken_;
+
+		case CodeState::Experimental:
+		default:
+			return &iconExperimental_;
+		}
+	}
+
+	void ProcessorTreeWidget::currentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem*)
+	{
+		if (!current)
+		{
+			return;
+		}
+		std::string classname = current->data(0, ProcessorTree::IDENTIFIER_ROLE).toString().toUtf8().constData();
+
+		if (!classname.empty())
+		{
+//			helpWidget_->showDocForClassName(classname);
+		}
+	}
+
+	QTreeWidgetItem* ProcessorTreeWidget::addToplevelItemTo(QString title, const std::string& desc)
+	{
+		QTreeWidgetItem* newItem = new QTreeWidgetItem(QStringList(title));
+
+
+		if (!desc.empty())
+		{
+			//newItem->setToolTip(0, utilqt::toLo)
+		}
+		processorTree_->addTopLevelItem(newItem);
+		processorTree_->setFirstItemColumnSpanned(newItem, true);
+
+		return newItem;
+	}
+
+	QTreeWidgetItem* ProcessorTreeWidget::addProcessorItemTo(QTreeWidgetItem* item, ProcessorFactoryObject* processor, std::string moduleId)
+	{
+		QTreeWidgetItem* newItem = new QTreeWidgetItem();
+		newItem->setIcon(0, *getCodeStateIcon(processor->getCodeState()));
+		newItem->setText(0, QString::fromStdString(processor->getDisplayName()));
+		newItem->setTextAlignment(1, Qt::AlignRight);
+		newItem->setData(0, ProcessorTree::IDENTIFIER_ROLE,
+			QString::fromStdString(processor->getClassIdentifier()));
+
+
+		auto platformTags = util::getPlatformTags(processor->getTags());
+		const bool hasTags = !platformTags.empty();
+
+		//if (hasTags)
+		//{
+		//	newItem->setText(1, utilqt::toQString(platformTags.getString() + " "));
+
+		//	QFont font = newItem->font(1);
+		//	font.setWeight(QFont::Bold);
+		//	newItem->setFont(1, font);
+
+		//}
+
+		{
+
+		}
+
+		item->addChild(newItem);
+
+		if (!hasTags)
+		{
+			processorTree_->setFirstItemColumnSpanned(newItem, true);
+		}
+		return newItem;
 	}
 
 }

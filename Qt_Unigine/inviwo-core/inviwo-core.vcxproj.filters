@@ -25,27 +25,237 @@
     <Filter Include="源文件\util">
       <UniqueIdentifier>{cd595133-e0c8-4a75-9cdc-0efd6f446d7a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\properties">
+      <UniqueIdentifier>{43cac5c1-7cab-4440-a112-823c68062e39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\properties">
+      <UniqueIdentifier>{4f4ea66f-8d21-4a1f-9d0c-bf31915f9576}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\io">
+      <UniqueIdentifier>{ed7bfb80-4beb-486e-8b72-9b9ee759fcc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\io">
+      <UniqueIdentifier>{3fe7142d-8d81-44dc-ba1d-d06309c3b893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\io\serialization">
+      <UniqueIdentifier>{da8be980-3b4d-4833-98be-5c304317e7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\io\serialization">
+      <UniqueIdentifier>{6da52153-0227-4d1d-8678-4182ed1e52e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\processors">
+      <UniqueIdentifier>{978792ea-ab8e-467e-99f6-483bd5e4500d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\processors">
+      <UniqueIdentifier>{6a73ef95-19c6-4f84-8471-818baa33c7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\network">
+      <UniqueIdentifier>{bca4f380-5719-401b-891a-181f2463703e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\network">
+      <UniqueIdentifier>{307147aa-6e02-42d7-a79c-5eb85f31ebef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\metadata">
+      <UniqueIdentifier>{6df2154d-e11d-40e3-8e3f-fd6c91331fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\metadata">
+      <UniqueIdentifier>{656a2c67-4ee7-40bf-a7d6-16298d146b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util\settings">
+      <UniqueIdentifier>{f91bff60-5e47-4478-9d01-de3c94fc5d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\util\settings">
+      <UniqueIdentifier>{cd15ca42-1ad0-4442-ab76-f0ef81da4b34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="raiiutils.h">
-      <Filter>头文件\util</Filter>
-    </ClInclude>
     <ClInclude Include="inviwocoredefine.h">
       <Filter>头文件\common</Filter>
     </ClInclude>
     <ClInclude Include="inviwoapplication.h">
       <Filter>头文件\common</Filter>
     </ClInclude>
-    <ClInclude Include="singleton.h">
+    <ClInclude Include="inviwo.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processor.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processorfactoryobject.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processorinfo.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processorstate.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processortags.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processortraits.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processorwidgetobserver.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processorwidget.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="inviwomodule.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="inviwomodulefactoryobject.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\property.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertyobserver.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertysemantics.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertywidget.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="util\dispatcher.h">
       <Filter>头文件\util</Filter>
     </ClInclude>
-    <ClInclude Include="exception.h">
+    <ClInclude Include="util\exception.h">
       <Filter>头文件\util</Filter>
     </ClInclude>
-    <ClInclude Include="stdextensions.h">
+    <ClInclude Include="util\factory.h">
       <Filter>头文件\util</Filter>
     </ClInclude>
-    <ClInclude Include="stringconversion.h">
+    <ClInclude Include="util\fileobserver.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\filesystem.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\logcentral.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\observer.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\ostreamjoiner.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\pathtype.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\raiiutils.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\singleton.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\stdextensions.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\stringconversion.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\threadpool.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\tinydirinterface.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="processors\processorfactory.h">
+      <Filter>头文件\processors</Filter>
+    </ClInclude>
+    <ClInclude Include="io\serialization\serializable.h">
+      <Filter>头文件\io\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="io\serialization\serialization.h">
+      <Filter>头文件\io\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="io\serialization\serializer.h">
+      <Filter>头文件\io\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="io\serialization\deserializer.h">
+      <Filter>头文件\io\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="io\serialization\serializebase.h">
+      <Filter>头文件\io\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="io\serialization\serializationexception.h">
+      <Filter>头文件\io\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertyfactory.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertyfactoryobject.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="inviwocore.h">
+      <Filter>头文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\optionproperty.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertyvisibility.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="network\processornetwork.h">
+      <Filter>头文件\network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\workspacemanager.h">
+      <Filter>头文件\network</Filter>
+    </ClInclude>
+    <ClInclude Include="glm.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\settings\settings.h">
+      <Filter>头文件\util\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="util\settings\systemsettings.h">
+      <Filter>头文件\util\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="util\vectoroperations.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\introspection.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertyownerobserver.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertyowner.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\boolproperty.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\ordinalproperty.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\buttonproperty.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\compositeproperty.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\templateproperty.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\invalidationlevel.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="io\serialization\ticpp.h">
+      <Filter>头文件\io\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="util\formats.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\formatsdefinefunc.h">
+      <Filter>头文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\assertion.h">
       <Filter>头文件\util</Filter>
     </ClInclude>
   </ItemGroup>
@@ -53,7 +263,121 @@
     <ClCompile Include="inviwoapplication.cpp">
       <Filter>源文件\common</Filter>
     </ClCompile>
-    <ClCompile Include="exception.cpp">
+    <ClCompile Include="processors\processor.cpp">
+      <Filter>源文件\processors</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\processorinfo.cpp">
+      <Filter>源文件\processors</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\processortags.cpp">
+      <Filter>源文件\processors</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\processorwidgetobserver.cpp">
+      <Filter>源文件\processors</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\processorwidget.cpp">
+      <Filter>源文件\processors</Filter>
+    </ClCompile>
+    <ClCompile Include="inviwomodule.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="inviwomodulefactoryobject.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\property.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertyobserver.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertywidget.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertysemantics.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="util\exception.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\fileobserver.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\filesystem.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\logcentral.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\observer.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\stringconversion.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\threadpool.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\tinydirinterface.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="processors\processorfactory.cpp">
+      <Filter>源文件\processors</Filter>
+    </ClCompile>
+    <ClCompile Include="io\serialization\serializer.cpp">
+      <Filter>源文件\io\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="io\serialization\deserializer.cpp">
+      <Filter>源文件\io\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="io\serialization\serializebase.cpp">
+      <Filter>源文件\io\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="io\serialization\serializationexception.cpp">
+      <Filter>源文件\io\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertyfactory.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertyfactoryobject.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="inviwocore.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\optionproperty.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="network\processornetwork.cpp">
+      <Filter>源文件\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\workspacemanager.cpp">
+      <Filter>源文件\network</Filter>
+    </ClCompile>
+    <ClCompile Include="util\settings\settings.cpp">
+      <Filter>源文件\util\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="util\settings\systemsettings.cpp">
+      <Filter>源文件\util\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertyownerobserver.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertyowner.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\boolproperty.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\buttonproperty.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\compositeproperty.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="util\formats.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\assertion.cpp">
       <Filter>源文件\util</Filter>
     </ClCompile>
   </ItemGroup>

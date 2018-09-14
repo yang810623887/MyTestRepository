@@ -101,14 +101,16 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;INVIWOCORE_EXPORTS;INVIWO_ALL_DYN_LINK;IVW_CORE_EXPORTS;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;INVIWOCORE_EXPORTS;INVIWO_ALL_DYN_LINK;IVW_CORE_EXPORTS;_WIN32;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../modules/_generated;../ext;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>..\bin\$(TargetName)$(TargetExt)</OutputFile>
       <ImportLibrary>..\bin\$(TargetName).lib</ImportLibrary>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -148,17 +150,111 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="exception.h" />
+    <ClInclude Include="glm.h" />
+    <ClInclude Include="inviwo.h" />
     <ClInclude Include="inviwoapplication.h" />
+    <ClInclude Include="inviwocore.h" />
     <ClInclude Include="inviwocoredefine.h" />
-    <ClInclude Include="raiiutils.h" />
-    <ClInclude Include="singleton.h" />
-    <ClInclude Include="stdextensions.h" />
-    <ClInclude Include="stringconversion.h" />
+    <ClInclude Include="inviwomodule.h" />
+    <ClInclude Include="inviwomodulefactoryobject.h" />
+    <ClInclude Include="io\serialization\deserializer.h" />
+    <ClInclude Include="io\serialization\serializable.h" />
+    <ClInclude Include="io\serialization\serialization.h" />
+    <ClInclude Include="io\serialization\serializationexception.h" />
+    <ClInclude Include="io\serialization\serializebase.h" />
+    <ClInclude Include="io\serialization\serializer.h" />
+    <ClInclude Include="io\serialization\ticpp.h" />
+    <ClInclude Include="network\processornetwork.h" />
+    <ClInclude Include="network\workspacemanager.h" />
+    <ClInclude Include="processors\processor.h" />
+    <ClInclude Include="processors\processorfactory.h" />
+    <ClInclude Include="processors\processorfactoryobject.h" />
+    <ClInclude Include="processors\processorinfo.h" />
+    <ClInclude Include="processors\processorstate.h" />
+    <ClInclude Include="processors\processortags.h" />
+    <ClInclude Include="processors\processortraits.h" />
+    <ClInclude Include="processors\processorwidget.h" />
+    <ClInclude Include="processors\processorwidgetobserver.h" />
+    <ClInclude Include="properties\boolproperty.h" />
+    <ClInclude Include="properties\buttonproperty.h" />
+    <ClInclude Include="properties\compositeproperty.h" />
+    <ClInclude Include="properties\invalidationlevel.h" />
+    <ClInclude Include="properties\optionproperty.h" />
+    <ClInclude Include="properties\ordinalproperty.h" />
+    <ClInclude Include="properties\property.h" />
+    <ClInclude Include="properties\propertyfactory.h" />
+    <ClInclude Include="properties\propertyfactoryobject.h" />
+    <ClInclude Include="properties\propertyobserver.h" />
+    <ClInclude Include="properties\propertyowner.h" />
+    <ClInclude Include="properties\propertyownerobserver.h" />
+    <ClInclude Include="properties\propertysemantics.h" />
+    <ClInclude Include="properties\propertyvisibility.h" />
+    <ClInclude Include="properties\propertywidget.h" />
+    <ClInclude Include="properties\templateproperty.h" />
+    <ClInclude Include="util\assertion.h" />
+    <ClInclude Include="util\dispatcher.h" />
+    <ClInclude Include="util\exception.h" />
+    <ClInclude Include="util\factory.h" />
+    <ClInclude Include="util\fileobserver.h" />
+    <ClInclude Include="util\filesystem.h" />
+    <ClInclude Include="util\formats.h" />
+    <ClInclude Include="util\formatsdefinefunc.h" />
+    <ClInclude Include="util\introspection.h" />
+    <ClInclude Include="util\logcentral.h" />
+    <ClInclude Include="util\observer.h" />
+    <ClInclude Include="util\ostreamjoiner.h" />
+    <ClInclude Include="util\pathtype.h" />
+    <ClInclude Include="util\raiiutils.h" />
+    <ClInclude Include="util\settings\settings.h" />
+    <ClInclude Include="util\settings\systemsettings.h" />
+    <ClInclude Include="util\singleton.h" />
+    <ClInclude Include="util\stdextensions.h" />
+    <ClInclude Include="util\stringconversion.h" />
+    <ClInclude Include="util\threadpool.h" />
+    <ClInclude Include="util\tinydirinterface.h" />
+    <ClInclude Include="util\vectoroperations.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="exception.cpp" />
     <ClCompile Include="inviwoapplication.cpp" />
+    <ClCompile Include="inviwocore.cpp" />
+    <ClCompile Include="inviwomodule.cpp" />
+    <ClCompile Include="inviwomodulefactoryobject.cpp" />
+    <ClCompile Include="io\serialization\deserializer.cpp" />
+    <ClCompile Include="io\serialization\serializationexception.cpp" />
+    <ClCompile Include="io\serialization\serializebase.cpp" />
+    <ClCompile Include="io\serialization\serializer.cpp" />
+    <ClCompile Include="network\processornetwork.cpp" />
+    <ClCompile Include="network\workspacemanager.cpp" />
+    <ClCompile Include="processors\processor.cpp" />
+    <ClCompile Include="processors\processorfactory.cpp" />
+    <ClCompile Include="processors\processorinfo.cpp" />
+    <ClCompile Include="processors\processortags.cpp" />
+    <ClCompile Include="processors\processorwidget.cpp" />
+    <ClCompile Include="processors\processorwidgetobserver.cpp" />
+    <ClCompile Include="properties\boolproperty.cpp" />
+    <ClCompile Include="properties\buttonproperty.cpp" />
+    <ClCompile Include="properties\compositeproperty.cpp" />
+    <ClCompile Include="properties\optionproperty.cpp" />
+    <ClCompile Include="properties\property.cpp" />
+    <ClCompile Include="properties\propertyfactory.cpp" />
+    <ClCompile Include="properties\propertyfactoryobject.cpp" />
+    <ClCompile Include="properties\propertyobserver.cpp" />
+    <ClCompile Include="properties\propertyowner.cpp" />
+    <ClCompile Include="properties\propertyownerobserver.cpp" />
+    <ClCompile Include="properties\propertysemantics.cpp" />
+    <ClCompile Include="properties\propertywidget.cpp" />
+    <ClCompile Include="util\assertion.cpp" />
+    <ClCompile Include="util\exception.cpp" />
+    <ClCompile Include="util\fileobserver.cpp" />
+    <ClCompile Include="util\filesystem.cpp" />
+    <ClCompile Include="util\formats.cpp" />
+    <ClCompile Include="util\logcentral.cpp" />
+    <ClCompile Include="util\observer.cpp" />
+    <ClCompile Include="util\settings\settings.cpp" />
+    <ClCompile Include="util\settings\systemsettings.cpp" />
+    <ClCompile Include="util\stringconversion.cpp" />
+    <ClCompile Include="util\threadpool.cpp" />
+    <ClCompile Include="util\tinydirinterface.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

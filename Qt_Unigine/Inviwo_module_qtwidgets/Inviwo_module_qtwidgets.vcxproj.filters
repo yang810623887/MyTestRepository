@@ -16,6 +16,12 @@
     <Filter Include="Moc_File">
       <UniqueIdentifier>{4fe741c1-5616-405a-8f40-1674c62627e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\properties">
+      <UniqueIdentifier>{f55c7fbb-da59-4f8a-bf20-ee0bc52466a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\properties">
+      <UniqueIdentifier>{a71f3eed-fffe-47ea-ac66-0a046473315d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InviwoDockWidget.cpp">
@@ -36,19 +42,42 @@
     <ClCompile Include="..\GeneratedFiles\Debug\moc_propertylistwidget.cpp">
       <Filter>Moc_File</Filter>
     </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_propertywidgetqt.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\collapsiblegroupboxwidgetqt.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="properties\propertywidgetqt.cpp">
+      <Filter>源文件\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="editablelabelqt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="InviwoDockWidget.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="InviwoDockWidgetTitleBar.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="qtwidgetsmoduledefine.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="propertylistwidget.h">
+    <ClInclude Include="properties\collapsiblegroupboxwidgetqt.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="properties\propertywidgetqt.h">
+      <Filter>头文件\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="editablelabelqt.h">
       <Filter>头文件</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="InviwoDockWidget.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="InviwoDockWidgetTitleBar.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="propertylistwidget.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>

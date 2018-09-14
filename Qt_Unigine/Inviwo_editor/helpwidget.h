@@ -6,7 +6,15 @@
 #include "inviwomainwindow.h"
 #include "inviwoqteditordefine.h"
 
+class QObject;
+class QHelpEngineCore;
+class QResizeEvent;
+
 namespace inviwo {
+
+	class QCHFileObserver;
+	class HelpBrowser;
+
 
 	class IVW_QTEDITOR_API HelpWidget : public InviwoDockWidget {
 
@@ -16,17 +24,17 @@ namespace inviwo {
 		HelpWidget(const HelpWidget&) = delete;
 		HelpWidget& operator=(const HelpWidget&) = delete;
 
-	//	void showDocForClassName(std::string className);
-	//	void registerQCHFiles();
+		void showDocForClassName(std::string className);
+		void registerQCHFiles();
 
 	//protected:
 	//	virtual void resizeEvent(QResizeEvent* event) override;
 	private:
 		InviwoMainWindow * mainwindow_;
-//		QHelpEngineCore* helpEngine_;
-//		HelpBrowser* helpBrowser_;
+		QHelpEngineCore* helpEngine_;
+		HelpBrowser* helpBrowser_;
 		std::string current_;
-//		std::unique_ptr<QCHFileObserver> fileObserver_;
+		//std::unique_ptr<QCHFileObserver> fileObserver_;
 	};
 
 }

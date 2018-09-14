@@ -104,13 +104,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;INVIWO_EDITOR_EXPORTS;INVIWO_ALL_DYN_LINK;IVW_QTEDITOR_EXPORTS;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;..\bin;..\Inviwo_applicationbase;..\Inviwo_module_qtwidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\.\mkspecs\win32-msvc;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtHelp;$(QTDIR)\include\QtSql;..\bin;..\Inviwo_applicationbase;..\Inviwo_module_qtwidgets;..\modules\_generated;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;..\Qt_Unigine\bin;..\bin</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Inviwo_applicationbase.lib;Inviwo_module_qtwidgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;Qt5Helpd.lib;Qt5Sqld.lib;Inviwo_applicationbase.lib;Inviwo_module_qtwidgets.lib;inviwo-core.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\bin\$(TargetName)$(TargetExt)</OutputFile>
       <ImportLibrary>..\bin\\$(TargetName).lib</ImportLibrary>
     </Link>
@@ -181,16 +181,35 @@
     <ClCompile Include="..\GeneratedFiles\Debug\moc_consolewidget.cpp" />
     <ClCompile Include="..\GeneratedFiles\Debug\moc_helpwidget.cpp" />
     <ClCompile Include="..\GeneratedFiles\Debug\moc_inviwomainwindow.cpp" />
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_networkeditor.cpp" />
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_networkeditorview.cpp" />
     <ClCompile Include="..\GeneratedFiles\Debug\moc_processorlistwidget.cpp" />
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_resourcemanagerwidget.cpp" />
     <ClCompile Include="..\GeneratedFiles\Debug\moc_settingswidget.cpp" />
     <ClCompile Include="consolewidget.cpp" />
     <ClCompile Include="helpwidget.cpp" />
     <ClCompile Include="inviwomainwindow.cpp" />
+    <ClCompile Include="networkeditor.cpp" />
+    <ClCompile Include="networkeditorview.cpp" />
     <ClCompile Include="processorlistwidget.cpp" />
     <ClCompile Include="processorpreview.cpp" />
+    <ClCompile Include="resourcemanagerwidget.cpp" />
     <ClCompile Include="settingswidget.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="resourcemanagerwidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "..\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="networkeditor.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "..\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="networkeditorview.h">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "..\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="networkeditorobserver.h" />
     <ClInclude Include="processorpreview.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

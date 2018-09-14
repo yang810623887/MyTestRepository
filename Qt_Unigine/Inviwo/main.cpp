@@ -4,12 +4,15 @@
 #include <QFile>
 #include <QMainWindow>
 #include <QDesktopWidget>
-//#include "InviwoSplashScreen.h"
+#include "InviwoSplashScreen.h"
 #include "inviwoapplicationqt.h"
+//#include "../inviwo-core/inviwoapplication.h"
+#include "../Inviwo_applicationbase/inviwoapplicationqt.h"
 #include "inviwomainwindow.h"
 #include "AppEditorLogic.h"
 #include "AppSystemLogic.h"
 #include "AppWorldLogic.h"
+#include <../build/_generated/moduleregistration.h>
 
 #include "AppQt.h"
 #include <UnigineEngine.h>
@@ -56,7 +59,9 @@ int get_render_api()
 
 int main(int argc, char *argv[])
 {
-	inviwo::InviwoApplicationQt inviwoApp(argc, argv);
+//	inviwo::LogCentral::init();
+
+	inviwo::InviwoApplicationQt inviwoApp("Inviwo v 0.9.9", argc, argv);
 	inviwoApp.setWindowIcon(QIcon(":/icons/inviwo_light.png"));
 	inviwoApp.setAttribute(Qt::AA_NativeWindows);
 
@@ -68,41 +73,49 @@ int main(int argc, char *argv[])
 
 	inviwo::InviwoMainWindow mainWin( &inviwoApp );
 
+	// initialize and show splash screen
+	//inviwo::InviwoSplashScreen splashScreen(true);
+	inviwoApp.setProgressCallback([&](std::string s)
+	{
+		
+	});
+	//splashScreen.show();
+	//splashScreen.showMessage("Loading application...");
+
+
+	inviwoApp.registerModules(&inviwo::registerAllModules);
+	inviwoApp.processEvents();
+
+	mainWin.updateForNewModules();
 
 
 	//unigine
 
-	AppQt  *widget = NULL;
-	if (get_render_api() == RENDER_OPENGL)
-		widget = new GLAppQt(&mainWin);
-	else
-	{
-#ifdef _WIN32
-		widget = new D3D11AppQt(&mainWin);
-#endif
-	}
-
-
-	Unigine::EnginePtr engine(UNIGINE_VERSION, widget, argc, argv);
-
-
-	// enter main loop
-	AppSystemLogic system_logic;
-	AppWorldLogic world_logic;
-
-	engine->addSystemLogic(&system_logic);
-	engine->addWorldLogic(&world_logic);
-	//engine->addEditorLogic(&editor_logic);
+//	AppQt  *widget = NULL;
+//	if (get_render_api() == RENDER_OPENGL)
+//		widget = new GLAppQt(&mainWin);
+//	else
+//	{
+//#ifdef _WIN32
+//		widget = new D3D11AppQt(&mainWin);
+//#endif
+//	}
 //
 //
-//	inviwo::InviwoSplashScreen splashScreen(true);
+//	Unigine::EnginePtr engine(UNIGINE_VERSION, widget, argc, argv);
 //
-//	//splashScreen.show();
-//	//splashScreen.showMessage("Loading application...");
 //
-	mainWin.setWindowTitle("main_qt");
-	mainWin.setCentralWidget(widget);
-	mainWin.move((QApplication::desktop()->screen()->width() - mainWin.width()) / 2, (QApplication::desktop()->screen()->height() - mainWin.height()) / 2);
+//	// enter main loop
+//	AppSystemLogic system_logic;
+//	AppWorldLogic world_logic;
+//
+//	engine->addSystemLogic(&system_logic);
+//	engine->addWorldLogic(&world_logic);
+//	//engine->addEditorLogic(&editor_logic);
+//
+//	mainWin.setWindowTitle("main_qt");
+//	mainWin.setCentralWidget(widget);
+//	mainWin.move((QApplication::desktop()->screen()->width() - mainWin.width()) / 2, (QApplication::desktop()->screen()->height() - mainWin.height()) / 2);
 	mainWin.show();
 	return inviwoApp.exec();
 }

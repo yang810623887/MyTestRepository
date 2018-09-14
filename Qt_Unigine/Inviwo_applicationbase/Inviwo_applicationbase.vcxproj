@@ -112,7 +112,7 @@
       <OutputFile>..\bin\$(TargetName)$(TargetExt)</OutputFile>
       <ImportLibrary>..\bin\$(TargetName).lib</ImportLibrary>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;..\bin</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;inviwo-core.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -81,5 +81,6 @@
         <file>stylesheets/images/slider.png</file>
         <file>stylesheets/images/slider_disabled.png</file>
         <file>stylesheets/images/slider_hover.png</file>
+        <file>images/splashscreen.png</file>
     </qresource>
 </RCC>

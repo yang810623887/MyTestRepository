@@ -1,0 +1,175 @@
+#--------------------------------------------------------------------
+# Inviwo Base Module
+ivw_module(Base)
+
+#--------------------------------------------------------------------
+# Add header files
+set(HEADER_FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/algorithmoptions.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/convexhull.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/convexhullmesh.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/cubeproxygeometry.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/dataminmax.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/image/imagecontour.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/image/layerramdistancetransform.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/randomutils.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/marchingtetrahedron.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumecurl.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumedivergence.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumegradient.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumelaplacian.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumeramdistancetransform.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumeramsubsample.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumeramsubset.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumesignificantvoxels.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/datastructures/imagereusecache.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/datastructures/kdtree.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/io/binarystlwriter.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/io/stlwriter.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/io/wavefrontwriter.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/convexhull2dprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/cubeproxygeometryprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/dataexport.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/datasource.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/diffuselightsourceprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/directionallightsourceprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/distancetransformram.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/heightfieldmapper.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagecontourprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imageexport.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesequenceelementselectorprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesnapshot.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesource.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesourceseries.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/inputselector.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/layerdistancetransformram.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshclipping.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshcreator.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshexport.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshsequenceelementselectorprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshsource.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/noiseprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/noisevolumeprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/ordinalpropertyanimator.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/orientationindicator.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/pixeltobufferprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/pixelvalue.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/pointlightsourceprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/randommeshgenerator.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/randomspheregenerator.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/singlevoxel.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/spotlightsourceprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/stereocamerasyncer.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/surfaceextraction.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/vectorelementselectorprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumebasistransformer.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumeboundingbox.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumecurlcpuprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumedivergencecpuprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumeexport.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumegradientcpuprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumelaplacianprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesequenceelementselectorprocessor.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesequencesource.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesequencetospatial4dsampler.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumeslice.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesource.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesubsample.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesubset.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumetospatialsampler.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/worldtransform.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/basisproperty.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/gaussianproperty.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/sequencetimerproperty.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/volumeinformationproperty.h
+)
+ivw_group("Header Files" ${HEADER_FILES})
+
+
+#--------------------------------------------------------------------
+# Add source files
+set(SOURCE_FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/algorithmoptions.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/convexhullmesh.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/cubeproxygeometry.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/dataminmax.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/image/imagecontour.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/image/layerramdistancetransform.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/marchingtetrahedron.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumecurl.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumedivergence.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumegradient.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumelaplacian.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumeramdistancetransform.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumeramsubsample.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumeramsubset.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/algorithm/volume/volumesignificantvoxels.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/datastructures/imagereusecache.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/io/binarystlwriter.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/io/stlwriter.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/io/wavefrontwriter.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/convexhull2dprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/cubeproxygeometryprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/diffuselightsourceprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/directionallightsourceprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/distancetransformram.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/heightfieldmapper.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagecontourprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imageexport.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesequenceelementselectorprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesnapshot.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesource.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/imagesourceseries.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/inputselector.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/layerdistancetransformram.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshclipping.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshcreator.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshexport.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshsequenceelementselectorprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/meshsource.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/noiseprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/noisevolumeprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/ordinalpropertyanimator.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/orientationindicator.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/pixeltobufferprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/pixelvalue.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/pointlightsourceprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/randommeshgenerator.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/randomspheregenerator.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/singlevoxel.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/spotlightsourceprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/stereocamerasyncer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/surfaceextraction.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumeboundingbox.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumecurlcpuprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumedivergencecpuprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumeexport.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumegradientcpuprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumelaplacianprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesequenceelementselectorprocessor.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesequencesource.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesequencetospatial4dsampler.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumeslice.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesource.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesubsample.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumesubset.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/processors/volumetospatialsampler.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/basisproperty.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/gaussianproperty.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/sequencetimerproperty.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/properties/volumeinformationproperty.cpp
+)
+ivw_group("Source Files" ${SOURCE_FILES})
+
+#--------------------------------------------------------------------
+# Unit tests
+set(TEST_FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/tests/unittests/base-unittest-main.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/tests/unittests/kdtree-test.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/tests/unittests/convexhull-test.cpp
+)
+ivw_add_unittest(${TEST_FILES})
+
+#--------------------------------------------------------------------
+# Create module
+ivw_create_module(${SOURCE_FILES} ${MOC_FILES} ${HEADER_FILES})

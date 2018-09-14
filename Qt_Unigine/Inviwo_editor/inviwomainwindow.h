@@ -20,6 +20,7 @@
 #define IVW_INVIWOMAINWINDOW_H
 
 #include "inviwoqteditordefine.h"
+#include "../inviwo-core/properties/optionproperty.h"
 
 #include <QMainWindow>
 #include <QDockWidget>
@@ -30,34 +31,66 @@
 #include <QMenuBar>
 #include <QAction>
 
-#include <memory>
 #include <unordered_map>
 
 namespace inviwo {
 
-	class InviwoApplicationQt;
 	class NetworkEditorView;
 	class NetworkEditor;
-	class settingswidget;
-	class ProcessorTreeWidget;
 	class PropertyListWidget;
-	class HelpWidget;
+	class ProcessorTreeWidget;
+	class ResourceManagerWidget;
 	class ConsoleWidget;
+	class settingswidget;
+	class HelpWidget;
+	class InviwoApplicationQt;
+	class InviwoApplication;
 
 	class IVW_QTEDITOR_API InviwoMainWindow : public QMainWindow
 	{
 		Q_OBJECT
 	public:
-		InviwoMainWindow(InviwoApplicationQt* app);
-		~InviwoMainWindow();
+		static const unsigned int maxNumRecentFiles_ = 10;
 
-		InviwoApplicationQt* getInviwoApplication() const;
+		InviwoMainWindow(InviwoApplicationQt* app);
+		virtual ~InviwoMainWindow();
+
+		void updateForNewModules();
+
+
+		void visibilityModeChangedInSettings();
+
+
+		NetworkEditor* getNetworkEditor() const;
+		InviwoApplication* getInviwoApplication() const;
+
+	public slots:
+		void newWorkspace();
+		void openWorkspace();
 
 	private:
 		void addActions();
 
+
+		bool askToSaveWorkspaceChanges();
+
+
+
+		void showAboutBox();
+
 	private:
-		InviwoApplicationQt * app_;
+
+		void loadWindowState();
+
+
+		void setCurrentWorkspace(QString workspaceFileName);
+
+		void updateWindowTitle();
+
+		InviwoApplicationQt *app_;
+		std::shared_ptr<NetworkEditor> networkEditor_;
+		NetworkEditorView* networkEditorView_;
+		TemplateOptionProperty<UsageMode>* appUsageModeProp_;
 
 
 		//dock widgets
@@ -65,6 +98,7 @@ namespace inviwo {
 		ProcessorTreeWidget* processorTreeWidget_;
 		PropertyListWidget* propertyListWidget_;
 		std::shared_ptr<ConsoleWidget> consoleWidget_;
+		ResourceManagerWidget* resourceManagerWidget_;
 		HelpWidget* helpWidget_;
 
 
@@ -76,6 +110,14 @@ namespace inviwo {
 
 		QMenu* exampleMenu_ = nullptr;
 		QMenu* testMenu_ = nullptr;
+
+		// settings
+		bool maximized_;
+
+		// paths
+		QString rootDir_;
+		QString workspaceFileDir_;
+		QString currentWorkspaceFileName_;
 	};
 
 }

@@ -22,12 +22,15 @@
 
 #include <QMainWindow>
 #include <QApplication>
+#include "../inviwo-core/inviwoapplication.h"
 namespace  inviwo {
 	class IVW_QTAPPLICATIONBASE_API InviwoApplicationQt : public QApplication
+														, public InviwoApplication
 	{
 		Q_OBJECT
 	public:
-		InviwoApplicationQt(int& argc, char** argv);
+		InviwoApplicationQt(std::string displayName, int& argc, char** argv);
+		virtual ~InviwoApplicationQt() = default;
 
 		void setMainWindow(QMainWindow* mainWindow);
 

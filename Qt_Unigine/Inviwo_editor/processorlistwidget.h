@@ -1,14 +1,18 @@
 #ifndef IVW_PROCESSORLISTWIDGET_H
 #define IVW_PROCESSORLISTWIDGET_H
 
+
+#include "inviwoqteditordefine.h"
 #include "InviwoDockWidget.h"
+#include "../inviwo-core/processors/processorfactoryobject.h"
+
 #include <QComboBox>
 #include <QLineEdit>
 #include <QListWidget>
 #include <QTreeWidget>
 #include <QMouseEvent>
 #include <QDrag>
-#include "inviwoqteditordefine.h"
+
 
 namespace inviwo {
 
@@ -17,7 +21,7 @@ namespace inviwo {
 	class IVW_QTEDITOR_API ProcessorTree : public QTreeWidget {
 	public:
 		ProcessorTree(QWidget* parent);
-		~ProcessorTree() = default;
+		~ProcessorTree() {};
 
 		static const int IDENTIFIER_ROLE;
 
@@ -42,8 +46,21 @@ namespace inviwo {
 	public slots:
 	void addProcessorsToTree();
 
+	protected:
+		bool processorFits(ProcessorFactoryObject* processor, const QString& filter);
+		const QIcon* getCodeStateIcon(CodeState) const;
+
+	private slots:
+		void currentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* previous);
 
 	private:
+		void addProcessor(std::string className);
+
+		QTreeWidgetItem* addToplevelItemTo(QString title, const std::string& desc);
+		QTreeWidgetItem* addProcessorItemTo(QTreeWidgetItem* item,
+												ProcessorFactoryObject* processor,
+												std::string moduleId);
+
 		ProcessorTree* processorTree_;
 		QComboBox* listView_;
 		QLineEdit* lineEdit_;

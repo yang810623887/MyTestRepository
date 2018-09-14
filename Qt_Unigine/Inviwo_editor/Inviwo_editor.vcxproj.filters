@@ -16,12 +16,6 @@
     <Filter Include="Moc_File">
       <UniqueIdentifier>{8c12d5ba-4f1e-4dd2-82fe-389529403f51}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件\properties">
-      <UniqueIdentifier>{aa5ae234-e426-4d65-9fc3-febd755c96df}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\properties">
-      <UniqueIdentifier>{ce6929a9-c4a4-4e30-a242-59739fd686d5}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="inviwomainwindow.cpp">
@@ -57,6 +51,24 @@
     <ClCompile Include="processorpreview.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="networkeditor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="networkeditorview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_networkeditor.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_networkeditorview.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
+    <ClCompile Include="resourcemanagerwidget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneratedFiles\Debug\moc_resourcemanagerwidget.cpp">
+      <Filter>Moc_File</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="inviwomainwindow.h">
@@ -77,9 +89,21 @@
     <CustomBuild Include="consolewidget.h">
       <Filter>头文件</Filter>
     </CustomBuild>
+    <CustomBuild Include="networkeditor.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="networkeditorview.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resourcemanagerwidget.h">
+      <Filter>头文件</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="processorpreview.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="networkeditorobserver.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
